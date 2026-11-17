@@ -3,7 +3,7 @@
 // sheet. Sent as plain text so the browser needs no preflight; Apps Script
 // answers with JSON. scripts/publish-desk.sh fills in the address from
 // tools/desk-apps-script/endpoint.txt.
-const DESK_REPLY_URL = "";
+const DESK_REPLY_URL = "https://script.google.com/macros/s/AKfycbxnlOKSllHJenBAixtF6QSfkmFsg40hCVXYtr1AGH7Vyn9zt2mTblXIwXP_CwJKknYODg/exec";
 
 async function sendDeskReply(fields) {
   if (!DESK_REPLY_URL) throw new Error("not connected");
