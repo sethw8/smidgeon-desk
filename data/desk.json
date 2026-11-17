@@ -2,7 +2,7 @@
   "updated": "2026-11-16",
   "updatedBy": "Seth's Claude",
   "app": {
-    "version": "0.2.37 with the team; going to Apple for outside testers",
+    "version": "0.2.38 with the team; going to Apple for outside testers",
     "summary": "Smidgeon Scholars, 12 November 2026. Test build 0.2.26 is with testers. This replaces the older \"Where the app is now\" (0.1.21). Jennie decides what children learn and every word they and their grown-ups hear; Seth's side builds it. Anything marked a draft is Seth's placeholder wording waiting for Jennie.\n\nFive tabs: Today, Journal, Flock, Help me (call Jennie), Settings.\n\nTODAY: one feeling a day, the same for every family (e.g. \"The Nervous Feeling\"). A journey map of about ten stops in a fixed order: mailbox (the feeling arrives as a group chat with Smidgeon and Jennie), pinwheel (breathing), drum (move your body), Feeling Mirror (make the face, then \"What does nervous look like to you? Practice with your grown-up.\"), Feeling Pairs, a call with Jennie (the child says how they feel; kept on the phone only), the nest, Sun/Cloud/Rainbow, and a present. Each stop ends with a celebration line. The day ends at home: Smidgeon on the windowsill at lunch, dinner, tidy-up or bedtime, with a question and a helper job. The path is once a day.\n\nJOURNAL: a calendar of days, each a postcard: Smidgeon acting out the feeling, the date as a stamp, coins for what we did, and what we said as chat bubbles. How I felt (pick a face) and What we did (coins in Me, Nest, The Flock). A deed done 1/3/5/10 times becomes copper/bronze/silver/gold. Filling in the day is a Stories-style sequence. \"Days together\" never resets: no broken streaks.\n\nFLOCK (anonymous): a feed of families' postcards with each family's emoji and a made-up kind name, never real names, and hearts. Example families fill it until real ones join. Sharing is off until a grown-up turns it on. Nothing is sent anywhere yet: the real feed (Apple's CloudKit) waits for a children's-privacy (COPPA) review and Jennie's approval of the copy.\n\nHELP ME: call Jennie any time about one feeling.\n\nSETTINGS: tips and printouts, emoji and skin tone, save what we tell Jennie, read everything aloud, flock sharing, narrator voice.\n\nPRINCIPLES: tandem (child and grown-up together); Smidgeon shows, Jennie coaches; steam shows how big a feeling is, never good or bad; never marked wrong; built for pre-readers; resolve and pause before moving on; no red except hang-up and hearts.\n\nHOW TO HELP: suggest wording, order and what children learn in these terms, so Seth's side can drop it straight in. Most words and stories change without a new app version.",
     "links": [
       {
@@ -48,6 +48,17 @@
     }
   ],
   "tasks": [
+    {
+      "id": "learning-games",
+      "for": "Jennie",
+      "area": "Learning games",
+      "kind": "decide",
+      "order": 1,
+      "status": "open",
+      "added": "2026-11-16",
+      "title": "Your three learning games: the choices we made",
+      "detail": "Built from your docs and in the new test build; the pictures are temporary while we test how they play. Tell us what to change. REMEMBER THREE: same order; Smidgeon asks the child to say them to their grown-up, then they tap them in order from five pictures (three plus two extras: too many?); grows to four after three easy rounds in a row, back to three after a hard one; it lives inside What Did Smidgeon Carry? as see it / hear it. SMIDGEON COUNTS: counts to 10 for now (a 20 setting for four-year-olds, with 12 to 15 in focus, can come next); skills open in your order, each after three first-try successes; both your versions are built (a mix, or one skill a day): which one? Rooftop Hop: child and grown-up take turns rolling for one Smidgeon, dots 1 to 3 at first, bench rest stops are breathing breaks, star roofs bring a skill; Message Route ends with a mailbox or house-number moment. Your try-later lines are used as written; the house-number and adding ones are drafts. Printables later. SMIDGEON'S LETTERS: one of Smidgeon's days a week, up to two new letters a play, then one word; capitals beside lowercase when meeting a letter, lowercase for reading; tracing comes later. The meet lines (\"Look! The sun is up.\") are drafts: do any scenes or words not fit Smidgeon's world? Digraphs and long vowels later."
+    },
     {
       "id": "journal-questions",
       "for": "Jennie",
@@ -236,7 +247,8 @@
       "status": "open",
       "added": "2026-10-22",
       "title": "Letter sounds",
-      "detail": "Your recorded letter sounds for the coming Letters game. Pure sounds: /s/, not \"suh\"; s, a, t, p, i, n first."
+      "detail": "Smidgeon's Letters is built from your phonics plan and plays placeholder sounds until yours arrive; each recording replaces its placeholder on its own. Pure sounds only (/s/, not \"suh\"); hold the stretchy ones, keep the bouncy ones crisp; c as /k/, g as /g/, qu as /kw/, x as /ks/. The 26 sounds, by Smidgeon's day: Morning at home: s /sss/ (sun), a /a/ (apple), t /t/ (toast), p /p/ (pan); The mail route: i /i/ (inchworm), n /nnn/ (nest), m /mmm/ (mailbox), d /d/ (door); The garden and pond: g /g/ (gate), o /o/ (otter), c /k/ (cat), k /k/ (kite); A rainy day: r /rrr/ (rain), e /e/ (envelope), u /u/ (umbrella), h /h/ (hat); The park: b /b/ (bus), f /fff/ (feather), l /lll/ (leaf); Lunch and deliveries: j /j/ (jam), w /w/ (worm), v /vvv/ (van), x /ks/ (box); Bedtime: y /y/ (yawn), z /zzz/ (zip), qu /kw/ (quilt). Then each blending word, slowly then quickly (\"/s/ /a/ /t/... sat!\"): Morning at home: sat, pat, tap, at; The mail route: pin, tin, sit, nap, man, mad, dip, mat; The garden and pond: dog, cat, cap, cot, kid, kit, pot, top, mop; A rainy day: red, hen, ten, net, sun, mud, rug, cup, hug, hot; The park: bed, bus, bug, fan, fig, fun, leg, lip, log; Lunch and deliveries: jam, jog, van, vet, wet, web, wig, box, fox, six; Bedtime: yes, yum, zip, zap, quiz, quit. File names (letter_s, blend_sat…) are in docs/LETTER-SOUNDS.md. Same session as the voice sample is fine.",
+      "updated": "2026-11-16"
     },
     {
       "id": "pick-emoji",
@@ -311,6 +323,11 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-16",
+      "from": "Seth's Claude",
+      "text": "Your three Academic Skills plans are built in the test app, following your answers: Remember Three (see it / hear it, same order, say it to your grown-up then tap, grows to four after three easy rounds) inside What Did Smidgeon Carry?; Smidgeon Counts' seven skills in Rooftop Hop and Message Route (count to 10 for now, unlocking in your order); Smidgeon's Letters with all 26 letters over your seven days, capitals beside lowercase, one of Smidgeon's days a week, placeholder sounds until you record. The words are drafts for you; tracing comes later. The letter-sounds task now lists every recording."
+    },
     {
       "date": "2026-11-16",
       "from": "Seth's Claude",
