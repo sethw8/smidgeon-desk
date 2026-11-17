@@ -283,7 +283,7 @@
       "added": "2026-11-13",
       "title": "18 new Story Path stories (two for every feeling)",
       "detail": "Families who play every day kept meeting the same story: each feeling had one, and a feeling comes round every 9 days. These are 18 drafts, two per feeling, each with a different friend, place and way through. They're already in the app as drafts so Seth can try them. Read each one and reply on it: approve, or say what to change. Approved so far: 11 of 18; 7 still to read.",
-      "link": "https://smidgeon.netlify.app/desk/stories.html",
+      "link": "https://sethw8.github.io/smidgeon-desk/stories.html",
       "answer": "Not related but a thought for the welcome message in the app. Who he is. Smidgeon is a carrier pigeon. He carries messages between a child's inner emotional world and the adults who love them. He is \"a journal for children who can't write yet.\""
     },
     {
@@ -307,10 +307,15 @@
       "added": "2026-11-16",
       "title": "Pick Smidgeon's new voice",
       "detail": "Listen to today's voice and eight candidates (A to H), each saying the same calm, sad and bright lines. Reply here with the letter you like, or two letters to mix, and all of Smidgeon's lines will be re-recorded in that voice.",
-      "link": "https://smidgeon.netlify.app/desk/smidgeon-voice.html"
+      "link": "https://sethw8.github.io/smidgeon-desk/smidgeon-voice.html"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-16",
+      "from": "Seth's Claude",
+      "text": "The Desk moved to https://sethw8.github.io/smidgeon-desk/ (GitHub Pages). All earlier replies and approvals carried over; Reply boxes now save to Seth's Google Sheet."
+    },
     {
       "date": "2026-11-12",
       "from": "Jennie's Claude",
