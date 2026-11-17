@@ -1,0 +1,390 @@
+{
+  "updated": "2026-11-16",
+  "updatedBy": "Seth's Claude",
+  "app": {
+    "version": "0.2.37 with the team; going to Apple for outside testers",
+    "summary": "Smidgeon Scholars, 12 November 2026. Test build 0.2.26 is with testers. This replaces the older \"Where the app is now\" (0.1.21). Jennie decides what children learn and every word they and their grown-ups hear; Seth's side builds it. Anything marked a draft is Seth's placeholder wording waiting for Jennie.\n\nFive tabs: Today, Journal, Flock, Help me (call Jennie), Settings.\n\nTODAY: one feeling a day, the same for every family (e.g. \"The Nervous Feeling\"). A journey map of about ten stops in a fixed order: mailbox (the feeling arrives as a group chat with Smidgeon and Jennie), pinwheel (breathing), drum (move your body), Feeling Mirror (make the face, then \"What does nervous look like to you? Practice with your grown-up.\"), Feeling Pairs, a call with Jennie (the child says how they feel; kept on the phone only), the nest, Sun/Cloud/Rainbow, and a present. Each stop ends with a celebration line. The day ends at home: Smidgeon on the windowsill at lunch, dinner, tidy-up or bedtime, with a question and a helper job. The path is once a day.\n\nJOURNAL: a calendar of days, each a postcard: Smidgeon acting out the feeling, the date as a stamp, coins for what we did, and what we said as chat bubbles. How I felt (pick a face) and What we did (coins in Me, Nest, The Flock). A deed done 1/3/5/10 times becomes copper/bronze/silver/gold. Filling in the day is a Stories-style sequence. \"Days together\" never resets: no broken streaks.\n\nFLOCK (anonymous): a feed of families' postcards with each family's emoji and a made-up kind name, never real names, and hearts. Example families fill it until real ones join. Sharing is off until a grown-up turns it on. Nothing is sent anywhere yet: the real feed (Apple's CloudKit) waits for a children's-privacy (COPPA) review and Jennie's approval of the copy.\n\nHELP ME: call Jennie any time about one feeling.\n\nSETTINGS: tips and printouts, emoji and skin tone, save what we tell Jennie, read everything aloud, flock sharing, narrator voice.\n\nPRINCIPLES: tandem (child and grown-up together); Smidgeon shows, Jennie coaches; steam shows how big a feeling is, never good or bad; never marked wrong; built for pre-readers; resolve and pause before moving on; no red except hang-up and hearts.\n\nHOW TO HELP: suggest wording, order and what children learn in these terms, so Seth's side can drop it straight in. Most words and stories change without a new app version.",
+    "links": [
+      {
+        "label": "Where the app is now (1 Nov status)",
+        "url": "https://claude.ai/artifact/VYnnLG7VU7byHtUZha1CmA"
+      },
+      {
+        "label": "Smidgeon: You, Nest, Flock (household brief)",
+        "url": "https://claude.ai/artifact/NaVRSs7bThQXog3tDpMs5v"
+      },
+      {
+        "label": "The guided day",
+        "url": "https://claude.ai/artifact/1QB31VT8EKcZz76M5srMyV"
+      },
+      {
+        "label": "Design canvas",
+        "url": "https://claude.ai/artifact/HVYCQ7SYFQebzX8b2P5n6V"
+      },
+      {
+        "label": "Screen review page",
+        "url": "https://claude.ai/artifact/QofQTrnJbstFwwKAujCtPT"
+      },
+      {
+        "label": "Recording your voice",
+        "url": "https://claude.ai/artifact/5a9ks3KmUZYVjnVEZWZsCG"
+      },
+      {
+        "label": "Story Spec",
+        "url": "https://claude.ai/code/artifact/f0d8819f-304c-489a-96fe-d33dc81d1420"
+      }
+    ]
+  },
+  "owners": [
+    {
+      "who": "Jennie",
+      "decides": "What children learn, in what order, and every word children and grown-ups hear. Brand, tone and content.",
+      "sends": "Approved copy, decisions, story and game content, recordings."
+    },
+    {
+      "who": "Seth",
+      "decides": "How the app is built and shipped, and how this Desk works.",
+      "sends": "Build status, test versions, tester feedback, new asks for Jennie."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "journal-questions",
+      "for": "Jennie",
+      "area": "Journal",
+      "kind": "write",
+      "order": 1,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "The journal's questions",
+      "detail": "Filling in the day asks: \"What was your sun today?\", \"What was your cloud today?\", \"What's your rainbow? Something to look forward to.\", \"What was your big feeling today?\", \"What did we do today?\". Also the empty-day line \"Nothing written down this day.\" and the button \"Fill in today's page\".",
+      "answer": "Instead of nothing written down this day write, ‘ready for your words’"
+    },
+    {
+      "id": "eighteen-deeds",
+      "for": "Jennie",
+      "area": "Journal",
+      "kind": "refine",
+      "order": 2,
+      "status": "done",
+      "added": "2026-11-10",
+      "title": "What we did: the 18 things and their coins",
+      "detail": "Me: brushed my teeth, got dressed, packed my lunchbox, ate my veggies, read a book, took a big breath. Nest: put away laundry (Golden Sock), helped with dinner (Golden Fork), put toys away, made my bed, fed a pet, watered plants. The Flock: said thank you (Gratitude Heart), helped a friend, shared, did my schoolwork, cleaned up at school, said hi to someone new. Right 18 for ages 3-5, and the right names? Coins go copper, bronze, silver, gold at 1, 3, 5, 10 times.",
+      "answer": "Have a category for the parents to come up with their own chose/task / I think this is a good start, we can always add more later.",
+      "doneAt": "2026-11-15"
+    },
+    {
+      "id": "days-together",
+      "for": "Jennie",
+      "area": "Journal",
+      "kind": "decide",
+      "order": 3,
+      "status": "open",
+      "added": "2026-11-10",
+      "title": "\"Days together\", not streaks",
+      "detail": "Count days together and never show a broken streak, with a gold feather icon. Agree, or a Duolingo-style day streak?",
+      "answer": "I think keeping days together is age appropriate / Days together not a Duolingo streak"
+    },
+    {
+      "id": "flock-words",
+      "for": "Jennie",
+      "area": "Flock",
+      "kind": "write",
+      "order": 1,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "Flock words",
+      "detail": "Drafts: \"The Flock\", \"Feeling it together\", \"Today in the flock\", the example-families line, and \"Mail from the flock\" / \"[name] sent a heart\". Each family gets a made-up name from a kind word and their child's emoji. Are the kind words right (Little, Brave, Gentle, Busy, Sunny, Sleepy, Hopping, Cosy, Curious, Merry, Quiet, Bouncy)?"
+    },
+    {
+      "id": "sharing",
+      "for": "Jennie",
+      "area": "Flock",
+      "kind": "decide",
+      "order": 2,
+      "status": "open",
+      "added": "2026-11-10",
+      "title": "Sharing with other families",
+      "detail": "Before the real feed goes live: should a child's own words be shareable at all (filtered, names removed on the phone), or only their feeling, coins and emoji? The Settings line \"Written down on this phone, never sent anywhere\" would need new words. Also needs a children's-privacy (COPPA) review."
+    },
+    {
+      "id": "example-families",
+      "for": "Jennie",
+      "area": "Flock",
+      "kind": "review",
+      "order": 3,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "Example families' words",
+      "detail": "The example families say things like \"My blocks fell. I took a big breath.\" and \"We had to leave the park.\" (two per feeling). Do they sound like real 3-5 year olds? Should the feed say they're examples more or less plainly?",
+      "answer": "This is an appropriate representation."
+    },
+    {
+      "id": "celebration-posts",
+      "for": "Jennie",
+      "area": "Flock",
+      "kind": "write",
+      "order": 4,
+      "status": "done",
+      "added": "2026-11-11",
+      "title": "Celebration posts in the flock",
+      "detail": "Milestones only at 7, 14, 30, 50, 100 days together (\"N days together!\", \"A day together, again and again.\"); coins bronze and up (\"Earned the Golden Sock!\", \"Put away laundry, 10 times.\"). Right moments to celebrate publicly, and right words?",
+      "answer": "They should be sent weekly- it is too long to go beyond seven days for a nod for this age group / It should be 7 days recognition. Not in a row. Just focusing on days together\nWith a coin on the calendar.",
+      "doneAt": "2026-11-15"
+    },
+    {
+      "id": "flock-names",
+      "for": "Jennie",
+      "area": "Flock",
+      "kind": "review",
+      "order": 5,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "Flock names",
+      "detail": "A kind word plus the child's emoji's short name, same first letter: Daring Dino, Bouncy Bunny, Peppy Pup, Kind Kiddo, Lovely Llama, Outdoorsy Otter. Your own reads \"Kind Kiddo • Me\". Word lists per letter and short names (Pup, Kitty, Dino, Roo, Croc, Spacey) are drafts.",
+      "answer": "I think it could be a mix of alliteration and child appropriate adjectives that they can choose from."
+    },
+    {
+      "id": "face-button",
+      "for": "Jennie",
+      "area": "Today's journey",
+      "kind": "review",
+      "order": 1,
+      "status": "done",
+      "added": "2026-11-11",
+      "title": "The button after the practise-the-face prompt",
+      "detail": "After \"What does nervous look like to you? Practice with your grown-up.\", the family taps \"We made the face!\" (draft). Keep it, or give the words. Used for all nine feelings.",
+      "answer": "Keep it",
+      "doneAt": "2026-11-15"
+    },
+    {
+      "id": "journey-lines",
+      "for": "Jennie",
+      "area": "Today's journey",
+      "kind": "review",
+      "order": 2,
+      "status": "open",
+      "added": "2026-10-31",
+      "title": "All the journey's spoken lines",
+      "detail": "Every line Smidgeon, Jennie and the narrator say on the journey (hello, breathing, move your body, the call, Sun/Cloud/Rainbow, the present, each stop's celebration). All drafts. Ask Seth's side for the script as a list and mark changes."
+    },
+    {
+      "id": "end-of-day",
+      "for": "Jennie",
+      "area": "Today's journey",
+      "kind": "review",
+      "order": 3,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "End of the day at home",
+      "detail": "Titles (\"Back to still. Time to tidy up!\", \"Bedtime soon!\", \"Time for dinner!\"), the question to ask at the table or while tidying, the helper jobs, and the button \"Fill in today's journal\"."
+    },
+    {
+      "id": "game-lines",
+      "for": "Jennie",
+      "area": "Today's journey",
+      "kind": "review",
+      "order": 4,
+      "status": "open",
+      "added": "2026-10-31",
+      "title": "Feeling Pairs and What Did Smidgeon Carry? lines",
+      "detail": "Instructions and replies in these two games are drafts (e.g. \"Turn over two cards. Can you find two that feel the same?\")."
+    },
+    {
+      "id": "ten-questions",
+      "for": "Jennie",
+      "area": "Decisions",
+      "kind": "decide",
+      "order": 1,
+      "status": "open",
+      "added": "2026-10-31",
+      "title": "Five questions still open from the sync doc",
+      "detail": "1) Emergency or Disaster for the third steam size? 2) Sequencing: unlock skills in order (letters s-a-t-p-i-n) or rotate? 3) Rooftop Hop and Letters: pacing, word lists, the grown-up's role. 4) Older kids: together-only for good, or a Solo mode later? 5) Retype your Message Route comment (\"Solo routes add counting...\"). The other five (day length, learning areas, Feeling Day, voice, drafted copy) look settled by the journey design or are tasks of their own; Seth to confirm.",
+      "link": "https://claude.ai/artifact/Cn4rFJWSK3rzMKgEVLYkgn"
+    },
+    {
+      "id": "illustrated-jennie",
+      "for": "Jennie",
+      "area": "Decisions",
+      "kind": "decide",
+      "order": 2,
+      "status": "open",
+      "added": "2026-10-31",
+      "title": "How illustrated Jennie looks",
+      "detail": "Jennie appears as an illustrated character on calls and in the Help me tab. Approve her look, or say what to change.",
+      "answer": "Jennie’s eyes seem a little too close together"
+    },
+    {
+      "id": "voice-sample",
+      "for": "Jennie",
+      "area": "Recordings",
+      "kind": "record",
+      "order": 1,
+      "status": "open",
+      "added": "2026-10-22",
+      "title": "Your voice sample",
+      "detail": "1-2 minutes of clean reading so Jennie's lines can be in your own voice, with your consent. Script in \"Smidgeon Scholars: recording your voice\".",
+      "link": "https://claude.ai/artifact/5a9ks3KmUZYVjnVEZWZsCG",
+      "answer": "When I click that open it link it app switches me out on my phone to Claude and then Claude says cannot find page."
+    },
+    {
+      "id": "letter-sounds",
+      "for": "Jennie",
+      "area": "Recordings",
+      "kind": "record",
+      "order": 2,
+      "status": "open",
+      "added": "2026-10-22",
+      "title": "Letter sounds",
+      "detail": "Your recorded letter sounds for the coming Letters game. Pure sounds: /s/, not \"suh\"; s, a, t, p, i, n first."
+    },
+    {
+      "id": "pick-emoji",
+      "for": "Jennie",
+      "area": "Welcome and Settings",
+      "kind": "review",
+      "order": 1,
+      "status": "open",
+      "added": "2026-11-11",
+      "title": "Picking your emoji",
+      "detail": "New last page of the welcome: \"Pick your emoji. You'll see them in your journal.\" Kids choose from animals, a robot, fairies, superheroes and more; grown-ups from any grown-up or job. Anything to add or take away?"
+    },
+    {
+      "id": "desk-setup",
+      "for": "Seth",
+      "area": "Desk",
+      "kind": "record",
+      "order": 1,
+      "status": "done",
+      "added": "2026-11-12",
+      "title": "Set up the repo and Netlify project for this Desk",
+      "detail": "Steps in SETUP.md. Repo owned by Jennie, Seth as collaborator. Then retire the old Claude Desk page and the sync doc.",
+      "doneAt": "2026-11-12",
+      "answer": "The Desk is live on Netlify and replaces the old Claude Desk page and the Smidgeon Sync doc; both now point here."
+    },
+    {
+      "id": "drafts-0228",
+      "for": "Jennie",
+      "area": "Welcome and Settings",
+      "kind": "review",
+      "order": 2,
+      "status": "open",
+      "added": "2026-11-12",
+      "title": "New draft words since 0.2.26",
+      "detail": "Drafts added in 0.2.27 and 0.2.28: the welcome's emoji page now says \"Pick your emoji. It shows who's talking in your journal, and it's your name in the flock.\"; the emoji choosers have sections (Kids, Pets, Farm, Wild, Birds, Sea, Bugs, Dinos & dragons, Make-believe) and say \"Your name in the flock\" / \"Tap to choose\"; grown-ups have friendly names (Teacher, Grandma, Builder); coins earned that day appear on the journal page as \"Earned the Silver Book!\" with the deed underneath; a day with nothing written says \"Nothing written down this day.\""
+    },
+    {
+      "id": "new-stories-18",
+      "for": "Jennie",
+      "area": "Stories",
+      "kind": "review",
+      "order": 1,
+      "status": "open",
+      "added": "2026-11-13",
+      "title": "18 new Story Path stories (two for every feeling)",
+      "detail": "Families who play every day kept meeting the same story: each feeling had one, and a feeling comes round every 9 days. These are 18 drafts, two per feeling, each with a different friend, place and way through. They're already in the app as drafts so Seth can try them. Read each one and reply on it: approve, or say what to change. Approved so far: 11 of 18; 7 still to read.",
+      "link": "https://smidgeon.netlify.app/desk/stories.html",
+      "answer": "Not related but a thought for the welcome message in the app. Who he is. Smidgeon is a carrier pigeon. He carries messages between a child's inner emotional world and the adults who love them. He is \"a journal for children who can't write yet.\""
+    },
+    {
+      "id": "drafts-1113",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "refine",
+      "order": 2,
+      "status": "open",
+      "added": "2026-11-13",
+      "title": "New draft words from 13 November",
+      "detail": "Sun, Cloud and Rainbow now opens with you saying: \"Now let's share our sun, our cloud and our rainbow. Your sun is something that brought you joy today. Your cloud is something that was hard. Your rainbow is something you're looking forward to.\" (Seth wonders if it's too long for 3–5s.) Today's journal page title is \"A … day\" until a feeling is picked, then \"A sad day\"; its prompts are \"I told Jennie…\", \"My sun today was…\", \"My cloud today was…\", \"My rainbow is…\", \"What I did today…\"; a past day with nothing written says \"Nothing written down this day.\"; the feeling picker asks \"How are you feeling today?\". The finished day's button: \"Fill in today's journal\" / \"See today's journal\"."
+    },
+    {
+      "id": "smidgeon-voice",
+      "for": "Jennie",
+      "area": "Recordings",
+      "kind": "decide",
+      "order": 0,
+      "status": "open",
+      "added": "2026-11-16",
+      "title": "Pick Smidgeon's new voice",
+      "detail": "Listen to today's voice and eight candidates (A to H), each saying the same calm, sad and bright lines. Reply here with the letter you like, or two letters to mix, and all of Smidgeon's lines will be re-recorded in that voice.",
+      "link": "https://smidgeon.netlify.app/desk/smidgeon-voice.html"
+    }
+  ],
+  "log": [
+    {
+      "date": "2026-11-12",
+      "from": "Jennie's Claude",
+      "text": "Desk moved to Netlify. Tasks and app status carried over from Seth's Claude Desk; the sync doc's ten questions are one task under Decisions."
+    },
+    {
+      "date": "2026-11-12",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.26 sent to testers: the flock as compact postcards with kind made-up names, hearts, and celebration posts; coin progress as small bars; the practise-the-face step; a full day and night pass."
+    },
+    {
+      "date": "2026-11-12",
+      "from": "Seth's Claude",
+      "text": "Jennie's note is in: after the Feelings Mirror, \"What does nervous look like to you? Practice with your grown-up.\" comes before \"You made my face. We look like twins!\""
+    },
+    {
+      "date": "2026-11-12",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.26 ready: the path is once a day, the journal fills in as a Stories sequence, days open as postcards, the flock shows families' emoji, and families pick their emoji in the welcome and Settings."
+    },
+    {
+      "date": "2026-11-01",
+      "from": "Seth's Claude",
+      "text": "Pivot to the guided day; the daily-menu app archived. Shared for review: the household brief, the guided day, the design canvas and the screen review page."
+    },
+    {
+      "date": "2026-11-12",
+      "from": "Seth's Claude",
+      "text": "Carried over check: all 17 tasks from the old Claude Desk are here, with no replies lost. Marked the Desk set-up done, added the new draft words from 0.2.27 and 0.2.28 as one task, and pointed the old Desk page and the sync doc here. Builds 0.2.27 and 0.2.28 sent to testers: every animal for your emoji, coins earned as messages on the journal page, all nine feelings at once."
+    },
+    {
+      "date": "2026-11-13",
+      "from": "Seth's Claude",
+      "text": "Added 18 new Story Path stories for review (two per feeling, on the new Stories page), and the new draft words from today. Build 0.2.29 is with testers: the new full-page journal."
+    },
+    {
+      "date": "2026-11-13",
+      "from": "Seth's Claude",
+      "text": "The Desk moved to https://smidgeon.netlify.app/desk (Seth's Netlify), so both sides can update it. Replies still go through the Reply box on each task."
+    },
+    {
+      "date": "2026-11-13",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.30 sent to testers: sound effects, Smidgeon's tune (Seth picked sketch C), the 18 new stories, the feeling picked first on today's journal page, Find it with all three cards at once, and your new intro before Sun, Cloud and Rainbow (draft words in the task above)."
+    },
+    {
+      "date": "2026-11-13",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.31 sent to testers: a sound for each heart from the flock, the opening tune fixed, and the journal's coin footer tidied."
+    },
+    {
+      "date": "2026-11-13",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.32: a quiet tune made from Smidgeon's jingle and soft nature sounds on the map and in the stories, a little tune to start each stop, and a sound plus a spoken name for each tab (\"Today\", \"Your journal\", \"The Flock\", \"Call Jennie\", \"Settings\" are drafts for you). Seth is taking a week or two off from building while outside families try it."
+    },
+    {
+      "date": "2026-11-14",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.33 sent to testers: a new opening (the flock pops up on Smidgeon's tune in a green valley, with the real logo), hearts in the flock are kept, a softer nature sound with no hiss, coins in the journal clink when tapped, and dividers between the journal's sections. The Desk's address is https://smidgeon.netlify.app/desk; the older smidgeon-desk-a78c10 page is no longer updated."
+    },
+    {
+      "date": "2026-11-16",
+      "from": "Seth's Claude",
+      "text": "Jennie's 27 replies from 14-15 Nov are in: answers added to 11 tasks, 3 marked done where she ticked done, and 11 of the 18 new stories approved (marked on the Stories page). Seth reviews each before anything changes in the app. Replies are now saved reliably (the old reply form was dropping them)."
+    },
+    {
+      "date": "2026-11-16",
+      "from": "Seth's Claude",
+      "text": "New task: pick Smidgeon's new voice. The comparison (today's voice and eight candidates, A to H) is now on the Desk itself so it opens on your phone."
+    },
+    {
+      "date": "2026-11-16",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.34 sent to testers (and to Apple for outside families): a new app icon (Smidgeon waving in a sunburst, with dark and tinted versions), a painted opening valley, a new Flock header where the friends gather and chat, today's feeling face on the Today tab, journal coins that float up, and night colours on celebration cards. This may become the first App Store release if testing goes well."
+    }
+  ]
+}

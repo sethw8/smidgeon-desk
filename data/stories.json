@@ -1,0 +1,1202 @@
+{
+  "updated": "2026-11-16",
+  "updatedBy": "Seth's Claude",
+  "intro": "18 new Story Path stories, two for every feeling, so families who play every day don't keep meeting the same one. All drafts. Each picture's words are read aloud; at the choice the child picks what Smidgeon does, and either way ends back at still. Reply on each story: approve, or say what to change.",
+  "stories": [
+    {
+      "id": "fd-path-dancing-leaves",
+      "feeling": "happy",
+      "title": "The dancing leaves",
+      "lesson": "Noticing happy in your body",
+      "size": "A lot",
+      "beats": [
+        {
+          "id": "a",
+          "text": "The wind blew, and the autumn leaves began to dance 🍂.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Smidgeon and Pip danced with them! Twirl, hop, twirl! He felt so happy 😄.",
+          "choices": [
+            {
+              "emoji": "🌀",
+              "label": "Spin faster and faster",
+              "goes": "spin"
+            },
+            {
+              "emoji": "🫶",
+              "label": "Stop and feel the happy",
+              "goes": "feel"
+            }
+          ]
+        },
+        {
+          "id": "spin",
+          "text": "Faster, faster… whoops! He tumbled into the leaves, all dizzy 😵. He lay still for a moment.",
+          "next": "feel"
+        },
+        {
+          "id": "feel",
+          "text": "He stood still and noticed: his heart was bouncy, his beak was smiling, his chest felt warm ☀️.",
+          "next": "say"
+        },
+        {
+          "id": "say",
+          "text": "“This is what happy feels like!” he told Pip. “Mine too!” said Pip.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "They sat in the leaves, happy and warm. Noticing happy helps you remember it 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you ever pause in a happy moment to notice it?",
+        "insight": "Children learn feelings through their bodies. Noticing a good feeling teaches them what to look for later.",
+        "getLow": "In a happy moment, ask: “Where do you feel happy in your body?”",
+        "thenSay": [
+          "“You look so happy! Where do you feel it?”",
+          "“Let's remember this happy feeling.”"
+        ]
+      },
+      "forChild": [
+        "The leaves danced, and Smidgeon danced too 🍂.",
+        "He felt happy, with a warm chest and a big smile 😄.",
+        "He stopped to notice it: “This is what happy feels like!”"
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-welcome-home",
+      "feeling": "happy",
+      "title": "Welcome home!",
+      "lesson": "Sharing happy with words",
+      "size": "SO much",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon waited at the nest. The grown-up had been gone all day 🪺.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Then… there they were! Smidgeon was SO happy he couldn't keep still 🥳!",
+          "choices": [
+            {
+              "emoji": "💨",
+              "label": "Zoom round and round",
+              "goes": "zoom"
+            },
+            {
+              "emoji": "🤗",
+              "label": "Give a big hug",
+              "goes": "hug"
+            }
+          ]
+        },
+        {
+          "id": "zoom",
+          "text": "He zoomed round and round the nest. Wheee! Then he landed, puffing. He still wanted to say hello 🪶.",
+          "next": "hug"
+        },
+        {
+          "id": "hug",
+          "text": "He gave the grown-up a great big hug 🤗. “I'm so happy you're home!”",
+          "next": "tell"
+        },
+        {
+          "id": "tell",
+          "text": "Then he told them all about his day, and they listened to every word 💬.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Big happy, said out loud, made both of them smile 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do reunions at the end of the day feel rushed?",
+        "insight": "The moment you come back together is one of the biggest happy moments of a child's day.",
+        "getLow": "Give the first minute fully: get low, hug, and say “I'm so happy to see you.”",
+        "thenSay": [
+          "“You're SO happy I'm home! Me too.”",
+          "“Tell me one thing about your day.”"
+        ]
+      },
+      "forChild": [
+        "The grown-up came home 🪺.",
+        "Smidgeon was SO happy 🥳.",
+        "He gave a big hug and said, “I'm so happy you're home!”"
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-big-race",
+      "feeling": "excited",
+      "title": "The big race",
+      "lesson": "When excited makes it hard to wait",
+      "size": "A lot",
+      "beats": [
+        {
+          "id": "a",
+          "text": "The sparrows were having a race down the path 🏁.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“Can I race too?” Smidgeon was SO excited his feet were already running on the spot 🤩!",
+          "choices": [
+            {
+              "emoji": "💨",
+              "label": "Zoom off before “Go!”",
+              "goes": "zoom"
+            },
+            {
+              "emoji": "🌬️",
+              "label": "Ready… set… breathe",
+              "goes": "ready"
+            }
+          ]
+        },
+        {
+          "id": "zoom",
+          "text": "He zoomed off before anyone said go! “Come back, we have to start together!” 😅",
+          "next": "ready"
+        },
+        {
+          "id": "ready",
+          "text": "He came back and stood still. One slow breath 🌬️. Ready… set…",
+          "next": "go"
+        },
+        {
+          "id": "go",
+          "text": "“GO!” They raced down the path together, wings flapping 🏁!",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Nobody minded who won. Excited is even more fun when you can wait for “go” 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Does excitement make it hard to wait their turn?",
+        "insight": "Excitement pushes the body to move now. One breath before the start teaches the body how to wait.",
+        "getLow": "Play “ready, set, breathe… go!” games at home: running, jumping, even stacking blocks.",
+        "thenSay": [
+          "“You're SO excited to race!”",
+          "“Ready… set… breathe… go!”"
+        ]
+      },
+      "forChild": [
+        "The sparrows were having a race 🏁.",
+        "Smidgeon was SO excited his feet wouldn't wait 🤩.",
+        "He took one breath, waited for “go,” and raced with everyone."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-story-time",
+      "feeling": "excited",
+      "title": "Story time",
+      "lesson": "Waiting your turn to talk",
+      "size": "A little",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Robin was telling a story under the big tree 📖.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "It was about a dragon! Smidgeon had SO many ideas, his beak was bursting to talk 🤩.",
+          "choices": [
+            {
+              "emoji": "📣",
+              "label": "Shout out every idea",
+              "goes": "shout"
+            },
+            {
+              "emoji": "🤫",
+              "label": "Hold it in a hug and wait",
+              "goes": "wait"
+            }
+          ]
+        },
+        {
+          "id": "shout",
+          "text": "“And then! And then!” Robin stopped. Nobody could hear the story 😕.",
+          "next": "wait"
+        },
+        {
+          "id": "wait",
+          "text": "He hugged his wings round his idea and breathed 🌬️. He could hold it until the end.",
+          "next": "turn"
+        },
+        {
+          "id": "turn",
+          "text": "“Any ideas?” asked Robin. “The dragon could breathe bubbles!” said Smidgeon.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Everyone loved it. His idea was even better when everyone could hear it 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do they interrupt when they're excited?",
+        "insight": "Interrupting is excitement spilling over, not rudeness. Holding an idea is a skill they can practise.",
+        "getLow": "Teach a “hold it” signal: hands on heart means “I have an idea, I'm waiting.”",
+        "thenSay": [
+          "“You've got a great idea! Hold it in your hands.”",
+          "“Now it's your turn. Tell us!”"
+        ]
+      },
+      "forChild": [
+        "Robin was telling a dragon story 📖.",
+        "Smidgeon had SO many ideas. That's a little excited 🤩.",
+        "He held his idea and waited his turn, and everyone loved it."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-high-branch",
+      "feeling": "proud",
+      "title": "The high branch",
+      "lesson": "Feeling proud of practising",
+      "size": "A lot",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon looked up at the high branch. Every day he tried to fly up there 🌳.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Flap, flap, FLAP! Today he made it, all the way to the top! His chest puffed up 🌟.",
+          "choices": [
+            {
+              "emoji": "💨",
+              "label": "Rush to the next thing",
+              "goes": "rush"
+            },
+            {
+              "emoji": "🧍",
+              "label": "Stand tall and feel it",
+              "goes": "feel"
+            }
+          ]
+        },
+        {
+          "id": "rush",
+          "text": "He zoomed straight off to the next thing… and forgot to enjoy what he'd done. He flew back 🪶.",
+          "next": "feel"
+        },
+        {
+          "id": "feel",
+          "text": "He stood tall and took a big, proud breath 🌬️. He'd practised SO many times.",
+          "next": "tell"
+        },
+        {
+          "id": "tell",
+          "text": "“I practised and practised, and I did it!” he told the grown-up. “You never gave up,” they said.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "From the high branch, he could see the whole park. Proud feels best when you stop to feel it 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do they rush past their wins?",
+        "insight": "Pausing to feel proud helps a child connect effort with the good feeling, so they keep trying next time.",
+        "getLow": "After a win, pause together: “Stop and feel it. You did that.”",
+        "thenSay": [
+          "“You did it! How does your body feel?”",
+          "“You practised so many times.”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon practised flying to the high branch 🌳.",
+        "Today he made it! That's a lot of proud 🌟.",
+        "He stopped to feel it, then told the grown-up how he did it."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-brave-sorry",
+      "feeling": "proud",
+      "title": "The brave sorry",
+      "lesson": "Proud of doing the right thing",
+      "size": "A little",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon zoomed around the playroom. Pip had built a tall block tower 🧱.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "CRASH! His wing knocked it down by accident. Pip looked sad 😟. Smidgeon's tummy felt funny.",
+          "choices": [
+            {
+              "emoji": "🫣",
+              "label": "Sneak away",
+              "goes": "sneak"
+            },
+            {
+              "emoji": "💛",
+              "label": "Say sorry",
+              "goes": "sorry"
+            }
+          ]
+        },
+        {
+          "id": "sneak",
+          "text": "He tiptoed away, but the funny feeling followed him 😔. He went back.",
+          "next": "sorry"
+        },
+        {
+          "id": "sorry",
+          "text": "“I'm sorry, Pip. I knocked it by accident. Can I help fix it?” 💛",
+          "next": "fix"
+        },
+        {
+          "id": "fix",
+          "text": "They built it back together, even taller 🧱.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Smidgeon felt proud. Saying sorry was brave, and brave feels good 🌟."
+        }
+      ],
+      "grownUp": {
+        "question": "Do they hide mistakes because they're worried about being in trouble?",
+        "insight": "Owning a mistake takes courage. Noticing the courage (not just the mistake) makes it easier next time.",
+        "getLow": "When they own up, name the brave part first: “That was brave to tell me.”",
+        "thenSay": [
+          "“That was brave, saying sorry.”",
+          "“How do you feel now?”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon knocked down Pip's tower by accident 🧱.",
+        "He said sorry, and helped fix it 💛.",
+        "Saying sorry was brave. That's a little proud 🌟."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-cloud-watching",
+      "feeling": "calm",
+      "title": "Cloud watching",
+      "lesson": "Slowing down together",
+      "size": "A little",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon had been running and running all morning 🏃.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“Let's lie down and watch the clouds,” said the grown-up ☁️.",
+          "choices": [
+            {
+              "emoji": "🌀",
+              "label": "Wiggle and chatter",
+              "goes": "wiggle"
+            },
+            {
+              "emoji": "🌬️",
+              "label": "Breathe slowly and look",
+              "goes": "look"
+            }
+          ]
+        },
+        {
+          "id": "wiggle",
+          "text": "He wiggled and chattered and couldn't see a single cloud shape. “Let's go slow,” said the grown-up.",
+          "next": "look"
+        },
+        {
+          "id": "look",
+          "text": "He breathed slowly, in… and out 🌬️, and watched the sky drift by.",
+          "next": "shapes"
+        },
+        {
+          "id": "shapes",
+          "text": "“That one looks like a fish!” “And that one's a sleepy bunny!” ☁️",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "His body felt slow and soft, like a cloud. Calm is lovely to share 😌."
+        }
+      ],
+      "grownUp": {
+        "question": "Is every minute of the day busy?",
+        "insight": "Children need slow moments to learn what calm feels like. Doing it together makes it feel safe, not boring.",
+        "getLow": "Try two minutes of cloud watching (or ceiling watching): lie down and name shapes together.",
+        "thenSay": [
+          "“Let's go slow and look together.”",
+          "“How does your body feel now?”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon had been busy all morning 🏃.",
+        "He lay down to watch the clouds ☁️.",
+        "Slow breaths, slow clouds: he felt calm 😌."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-leaf-boats",
+      "feeling": "calm",
+      "title": "Leaf boats",
+      "lesson": "Finding calm by going slowly",
+      "size": "A lot",
+      "beats": [
+        {
+          "id": "a",
+          "text": "By the pond was a big, still puddle. Wren showed Smidgeon how to make leaf boats 🍃.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Smidgeon grabbed a whole wing-full of leaves. He wanted them all on the water NOW!",
+          "choices": [
+            {
+              "emoji": "💦",
+              "label": "Throw them all in at once",
+              "goes": "throw"
+            },
+            {
+              "emoji": "🍃",
+              "label": "Set one down gently",
+              "goes": "gently"
+            }
+          ]
+        },
+        {
+          "id": "throw",
+          "text": "SPLASH! The leaves sank in a soggy clump 💦. “Let's try slowly,” said Wren.",
+          "next": "gently"
+        },
+        {
+          "id": "gently",
+          "text": "He breathed out and set one leaf down, ever so gently 🍃. It floated!",
+          "next": "watch"
+        },
+        {
+          "id": "watch",
+          "text": "They watched it drift across the still water, slow… slow… slow 🪷.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Smidgeon felt slow and quiet inside, like the pond. Going slowly helps calm come 😌."
+        }
+      ],
+      "grownUp": {
+        "question": "Is it hard for them to do things slowly?",
+        "insight": "Slow, careful movements calm the body, which is why rhythmic, gentle play settles children.",
+        "getLow": "Try a slow-motion game: pour water, stack cups or float leaves as slowly as you can.",
+        "thenSay": [
+          "“Let's go slow… slower… slowest!”",
+          "“Look how calm the water is. How does your body feel?”"
+        ]
+      },
+      "forChild": [
+        "Wren showed Smidgeon leaf boats 🍃.",
+        "He set one down gently and watched it float 🪷.",
+        "Going slowly made him feel calm 😌."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-jays-squawk",
+      "feeling": "surprised",
+      "title": "Jay's big squawk",
+      "lesson": "When something makes you jump",
+      "size": "Bummer (little)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon was resting high up in the oak tree. It was nice and quiet 🌳.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“SQUAWK!” Jay landed right beside him. Smidgeon jumped so high his feathers puffed out 😮!",
+          "choices": [
+            {
+              "emoji": "📢",
+              "label": "Squawk back, loud",
+              "goes": "squawk"
+            },
+            {
+              "emoji": "🌬️",
+              "label": "Take a breath and look",
+              "goes": "look"
+            }
+          ]
+        },
+        {
+          "id": "squawk",
+          "text": "“SQUAWK!” Now Jay jumped too 😲! Two jumpy birds. They needed a breath.",
+          "next": "look"
+        },
+        {
+          "id": "look",
+          "text": "Smidgeon took a breath and looked 🌬️. It was only Jay, saying hello.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "“Sorry I made you jump!” said Jay. They laughed and sat together. Surprises pass quickly with a breath 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do they sometimes get cross after a fright?",
+        "insight": "A startle floods the body fast, and it can come out as anger. A breath gives the brain time to see it's safe.",
+        "getLow": "After a fright, help them look: “What was it? Oh, just Jay!”",
+        "thenSay": [
+          "“That made you jump!”",
+          "“Let's take a breath and look.”"
+        ]
+      },
+      "forChild": [
+        "Jay landed with a big SQUAWK 🌳.",
+        "Smidgeon jumped! That's surprised 😮.",
+        "He took a breath, looked, and it was just Jay saying hello."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-sudden-rain",
+      "feeling": "surprised",
+      "title": "The sudden rain",
+      "lesson": "When plans surprise you",
+      "size": "Problem (medium)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "The sun was shining in the meadow. Not a cloud in the sky ☀️.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Then… PLOP! A big raindrop landed on his head. And another! Rain, out of nowhere 🌧️!",
+          "choices": [
+            {
+              "emoji": "🌀",
+              "label": "Flap around in a panic",
+              "goes": "flap"
+            },
+            {
+              "emoji": "🍃",
+              "label": "Breathe and find a leaf",
+              "goes": "leaf"
+            }
+          ]
+        },
+        {
+          "id": "flap",
+          "text": "He flapped and spun around. Now he was dizzy AND wet 😵. Time to stop and breathe.",
+          "next": "leaf"
+        },
+        {
+          "id": "leaf",
+          "text": "He took a breath and looked around 🌬️. A big leaf! The perfect umbrella.",
+          "next": "wren"
+        },
+        {
+          "id": "wren",
+          "text": "Wren hopped under too. Pitter, patter, pitter, patter. It sounded like music 🎶.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "When the sun came back, they splashed in the puddles. Some surprises turn out fun 🌈."
+        }
+      ],
+      "grownUp": {
+        "question": "Do sudden changes throw the whole day off?",
+        "insight": "Surprises are hard because the brain had a different plan. A breath and a look help it make a new one.",
+        "getLow": "When plans change suddenly, say: “Surprise! Let's breathe and see what we can do.”",
+        "thenSay": [
+          "“That was a surprise! The rain came so fast.”",
+          "“Let's take a breath. What can we do now?”"
+        ]
+      },
+      "forChild": [
+        "The sun was shining, then rain came out of nowhere 🌧️.",
+        "Smidgeon was so surprised 😮.",
+        "He breathed, found a leaf umbrella, and the rain turned into fun."
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-runaway-ball",
+      "feeling": "frustrated",
+      "title": "The runaway ball",
+      "lesson": "When something won't go your way",
+      "size": "Problem (medium)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon and Pip were kicking a ball in the meadow ⚽.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "But every kick went the wrong way! His feathers puffed up, hot and grumbly 😣.",
+          "choices": [
+            {
+              "emoji": "💥",
+              "label": "Kick it away, hard",
+              "goes": "kick"
+            },
+            {
+              "emoji": "🌬️",
+              "label": "Stop and take a breath",
+              "goes": "breathe"
+            }
+          ]
+        },
+        {
+          "id": "kick",
+          "text": "WHUMP! The ball flew far away, and Pip had to go and get it 😕. The grumbly feeling was still there.",
+          "next": "breathe"
+        },
+        {
+          "id": "breathe",
+          "text": "He stopped. He breathed in… and out 🌬️. “This is tricky,” he said.",
+          "next": "show"
+        },
+        {
+          "id": "show",
+          "text": "“Kick it softly, with the side of your foot,” said Pip. They tried together.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Tap! It rolled right to Pip. Tricky things get easier when you slow down 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you jump in to fix it when they get frustrated?",
+        "insight": "Frustration is the feeling of learning something hard. A pause and a little help teaches more than doing it for them.",
+        "getLow": "Name it first, then offer one small tip: “That's tricky. Want to try it softly?”",
+        "thenSay": [
+          "“That's so tricky! You're frustrated.”",
+          "“Let's take a breath, then try one more time.”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon's kicks kept going the wrong way ⚽.",
+        "He felt hot and grumbly. That's frustrated 😣.",
+        "He took a breath, Pip showed him a trick, and it worked!"
+      ],
+      "review": {
+        "by": "Jennie",
+        "approved": true,
+        "date": "2026-11-15",
+        "note": ""
+      }
+    },
+    {
+      "id": "fd-path-pebble-circle",
+      "feeling": "frustrated",
+      "title": "The wobbly pebbles",
+      "lesson": "When you need a break",
+      "size": "Bummer (little)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon wanted to make a perfect circle of pebbles 🪨.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "They kept rolling out of place. “Stay THERE!” he huffed 😤.",
+          "choices": [
+            {
+              "emoji": "🙅",
+              "label": "Push them all over",
+              "goes": "push"
+            },
+            {
+              "emoji": "☁️",
+              "label": "Take a little break",
+              "goes": "rest"
+            }
+          ]
+        },
+        {
+          "id": "push",
+          "text": "He pushed them all over. Now there was no circle at all 😞. Maybe a break would help.",
+          "next": "rest"
+        },
+        {
+          "id": "rest",
+          "text": "He sat with the grown-up and had a drink of water. Slowly, his feathers settled 🌬️.",
+          "next": "again"
+        },
+        {
+          "id": "again",
+          "text": "Then he tried again, one pebble at a time, slowly… slowly…",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "A circle! Not perfect, but his. A break helped him come back to still 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you push them to keep going when they're about to explode?",
+        "insight": "A short break isn't giving up. It lets the body cool so the thinking brain can come back.",
+        "getLow": "Offer a break out loud: “Let's take a break and come back to it.”",
+        "thenSay": [
+          "“Those pebbles are being tricky.”",
+          "“Let's take a break, then try again together.”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon's pebbles kept rolling away 🪨.",
+        "He felt huffy. That's a little frustrated 😤.",
+        "He took a break, came back, and made his circle."
+      ]
+    },
+    {
+      "id": "fd-path-first-splash",
+      "feeling": "nervous",
+      "title": "The first splash",
+      "lesson": "When something new feels scary",
+      "size": "Problem (medium)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "The sparrows were splashing in the fountain. Splish, splash, SPLOOSH ⛲!",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Smidgeon had never been in. His tummy felt wobbly, and his feet wouldn't move 😟.",
+          "choices": [
+            {
+              "emoji": "🙈",
+              "label": "Hide behind the grown-up",
+              "goes": "hide"
+            },
+            {
+              "emoji": "🫱",
+              "label": "Hold the grown-up's wing",
+              "goes": "hold"
+            }
+          ]
+        },
+        {
+          "id": "hide",
+          "text": "He hid. “It's okay to feel nervous,” said the grown-up softly. “I'm right here.”",
+          "next": "hold"
+        },
+        {
+          "id": "hold",
+          "text": "He held the grown-up's wing and took a slow breath 🌬️. “Just one toe?”",
+          "next": "toe"
+        },
+        {
+          "id": "toe",
+          "text": "Dip. The water was cool and tickly! His wobbly feeling got a little smaller 💧.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "One toe, then two feet, then a splash! Brave can be very small steps 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you say “there's nothing to be scared of”?",
+        "insight": "Nervous is real, even when the thing is safe. Feeling believed helps a child take the next small step.",
+        "getLow": "Stay close and shrink the step: “Just one toe. I'm right here.”",
+        "thenSay": [
+          "“It's new, and new can feel wobbly.”",
+          "“Hold my hand. Just one little step.”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon had never splashed in the fountain ⛲.",
+        "His tummy felt wobbly. That's nervous 😟.",
+        "He held the grown-up's wing and tried one toe, then splashed!"
+      ]
+    },
+    {
+      "id": "fd-path-thunder",
+      "feeling": "nervous",
+      "title": "The rumbly thunder",
+      "lesson": "When a loud noise feels scary",
+      "size": "Disaster (big)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Rain pattered on the leaves. Pitter, patter 🌧️.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "BOOM! Thunder rumbled across the sky ⛈️. Smidgeon shook all over. His heart went thump, thump, thump!",
+          "choices": [
+            {
+              "emoji": "🍃",
+              "label": "Hide under a leaf alone",
+              "goes": "leaf"
+            },
+            {
+              "emoji": "🤗",
+              "label": "Snuggle up to the grown-up",
+              "goes": "snuggle"
+            }
+          ]
+        },
+        {
+          "id": "leaf",
+          "text": "He hid under a leaf, all alone. It was still very scary 😰. He wanted someone close.",
+          "next": "snuggle"
+        },
+        {
+          "id": "snuggle",
+          "text": "He snuggled up close. “That was loud,” said the grown-up. “You're safe with me.”",
+          "next": "count"
+        },
+        {
+          "id": "count",
+          "text": "They breathed together and counted the rumbles: one… two… they got further away 🌬️.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Soon it was just soft rain again. Someone close makes scary feel smaller 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you hurry to say “it's only thunder”?",
+        "insight": "A loud noise sets off the body's alarm before the brain can think. Closeness and a slow breath turn the alarm down.",
+        "getLow": "Get close first, words second: “That was loud. You're safe. Let's breathe together.”",
+        "thenSay": [
+          "“That was SO loud! Your body got a fright.”",
+          "“I'm right here. Let's count the rumbles.”"
+        ]
+      },
+      "forChild": [
+        "Thunder went BOOM ⛈️.",
+        "Smidgeon shook all over. That's SO much nervous 😰.",
+        "He snuggled up close and breathed with the grown-up until it passed."
+      ]
+    },
+    {
+      "id": "fd-path-robin-goes",
+      "feeling": "sad",
+      "title": "Goodbye, Robin",
+      "lesson": "When a friend goes away",
+      "size": "Problem (medium)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Robin was Smidgeon's friend. They built little pebble walls together every day 🪨.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“I'm going to visit my grandma, far away, for a long time,” said Robin. Smidgeon's wings drooped 😢.",
+          "choices": [
+            {
+              "emoji": "🙅",
+              "label": "Pretend he doesn't care",
+              "goes": "pretend"
+            },
+            {
+              "emoji": "💬",
+              "label": "Say “I'll miss you”",
+              "goes": "tell"
+            }
+          ]
+        },
+        {
+          "id": "pretend",
+          "text": "“Whatever,” he said, and looked away. But the sad stayed stuck inside, heavy and lumpy 😔.",
+          "next": "tell"
+        },
+        {
+          "id": "tell",
+          "text": "“I'll miss you,” he said, and gave Robin a big hug 🤗. A tear rolled down. That was okay.",
+          "next": "wave"
+        },
+        {
+          "id": "wave",
+          "text": "Robin waved goodbye. “I'll come back, and I'll tell you everything!” 👋",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "That night, the grown-up held him close. Missing someone means you love them 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you try to cheer them up quickly when they're sad?",
+        "insight": "Sadness passes faster when it's allowed. Saying the true thing (“I'll miss you”) lets it move through.",
+        "getLow": "Let them be sad with you: “You'll miss Robin. Me too. Let's sit together.”",
+        "thenSay": [
+          "“You're sad Robin is going away.”",
+          "“Missing someone means you love them.”"
+        ]
+      },
+      "forChild": [
+        "Robin had to go away for a long time 🪨.",
+        "Smidgeon's wings drooped. That's sad 😢.",
+        "He said, “I'll miss you,” and gave Robin a hug."
+      ]
+    },
+    {
+      "id": "fd-path-pip-cant-play",
+      "feeling": "sad",
+      "title": "Pip can't play",
+      "lesson": "When plans change",
+      "size": "Bummer (little)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Today Pip was coming to play! Smidgeon got his ball ready ⚽.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“Pip has a sniffly cold and needs to rest,” said the grown-up. Smidgeon's head hung low 😞.",
+          "choices": [
+            {
+              "emoji": "🙈",
+              "label": "Sulk by himself",
+              "goes": "sulk"
+            },
+            {
+              "emoji": "💬",
+              "label": "Say “I'm sad”",
+              "goes": "say"
+            }
+          ]
+        },
+        {
+          "id": "sulk",
+          "text": "He sat alone in a corner. Being alone made the sad feel bigger 😔.",
+          "next": "say"
+        },
+        {
+          "id": "say",
+          "text": "“I'm sad,” he said. “I wanted to play with Pip.” The grown-up sat close. “That's disappointing.” 💛",
+          "next": "play"
+        },
+        {
+          "id": "play",
+          "text": "Later, they rolled the ball together. It wasn't the same, but it was nice ⚽.",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Pip would play another day. Sad things can still have nice moments too 🌅."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you rush to a new plan the moment one falls through?",
+        "insight": "Disappointment needs a moment to be felt before the next plan can feel good.",
+        "getLow": "Name it first (“That's disappointing”), wait, then offer something small.",
+        "thenSay": [
+          "“You were so looking forward to it.”",
+          "“It's okay to feel sad. Want to sit with me?”"
+        ]
+      },
+      "forChild": [
+        "Pip was sick and couldn't come to play.",
+        "Smidgeon's head hung low. That's a little sad 😞.",
+        "He said, “I'm sad,” and the grown-up sat with him."
+      ]
+    },
+    {
+      "id": "fd-path-jays-ruffle",
+      "feeling": "angry",
+      "title": "Jay's ruffle",
+      "lesson": "When someone keeps bugging you",
+      "size": "Problem (medium)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon sat on his branch, feathers neat and smooth 🌿.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "Then Jay swooped down and ruffled his feathers, all messy. Again, and again! Smidgeon's face went hot 😠.",
+          "choices": [
+            {
+              "emoji": "📢",
+              "label": "Yell as loud as he can",
+              "goes": "yell"
+            },
+            {
+              "emoji": "🦶",
+              "label": "Three big stomps",
+              "goes": "stomp"
+            }
+          ]
+        },
+        {
+          "id": "yell",
+          "text": "“STOP IT!” he screeched. Jay jumped. Now everyone was upset 😬. Yelling made it bigger.",
+          "next": "stomp"
+        },
+        {
+          "id": "stomp",
+          "text": "Stomp. Stomp. Stomp 🦶. Then a big dragon breath out 🐉. His steam came down.",
+          "next": "words"
+        },
+        {
+          "id": "words",
+          "text": "“Stop. I don't like that,” said Smidgeon, in a strong, calm voice. Jay looked down. “Sorry.”",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "Jay sat nicely beside him. Angry is okay. Strong, calm words worked better than yelling 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do you tell them “just ignore it” when someone keeps bugging them?",
+        "insight": "Being bothered on purpose makes anyone angry. The skill isn't hiding it; it's cooling the body, then using strong words.",
+        "getLow": "Teach one sentence: “Stop. I don't like that.” Practise it together when everyone's calm.",
+        "thenSay": [
+          "“Jay kept ruffling you! Of course you're angry.”",
+          "“Let's stomp it out, then say ‘Stop, I don't like that.’”"
+        ]
+      },
+      "forChild": [
+        "Jay kept ruffling Smidgeon's feathers 🌿.",
+        "His face went hot. That's angry 😠.",
+        "Three stomps, a dragon breath, then strong words: “Stop. I don't like that.”"
+      ]
+    },
+    {
+      "id": "fd-path-not-yet",
+      "feeling": "angry",
+      "title": "Not time to go!",
+      "lesson": "When fun has to stop",
+      "size": "Disaster (big)",
+      "beats": [
+        {
+          "id": "a",
+          "text": "Smidgeon was having the BEST time playing ball ⚽.",
+          "next": "b"
+        },
+        {
+          "id": "b",
+          "text": "“Time to go home,” said the grown-up. “NO!” Smidgeon shouted. His whole body went hot and stompy 🌋.",
+          "choices": [
+            {
+              "emoji": "⚽",
+              "label": "Throw the ball",
+              "goes": "throw"
+            },
+            {
+              "emoji": "🐉",
+              "label": "Dragon breaths",
+              "goes": "dragon"
+            }
+          ]
+        },
+        {
+          "id": "throw",
+          "text": "He threw the ball. The grown-up stayed calm. “You're SO angry. I'm here.”",
+          "next": "dragon"
+        },
+        {
+          "id": "dragon",
+          "text": "Breathe in big… and blow it out like a dragon 🐉. Again. And again. The volcano got smaller.",
+          "next": "words"
+        },
+        {
+          "id": "words",
+          "text": "“I'm angry. I wanted more time,” said Smidgeon. “That makes sense,” said the grown-up. “One more kick, then home.”",
+          "next": "end"
+        },
+        {
+          "id": "end",
+          "text": "One more kick, then home to the nest. Big angry can come down, breath by breath 💛."
+        }
+      ],
+      "grownUp": {
+        "question": "Do transitions turn into battles at your house?",
+        "insight": "Stopping something fun is a real loss for a young child. Anger is how the loss comes out.",
+        "getLow": "Warn before the end (“two more minutes”), name the feeling, then give one last turn.",
+        "thenSay": [
+          "“You don't want to stop. You're SO angry.”",
+          "“Dragon breaths with me. Then one more kick.”"
+        ]
+      },
+      "forChild": [
+        "Smidgeon was having so much fun ⚽.",
+        "Then it was time to go, and he got SO angry 🌋.",
+        "Dragon breaths helped, then he said why: “I wanted more time.”"
+      ]
+    }
+  ]
+}

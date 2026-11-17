@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smidgeon's New Voice · Smidgeon Desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* The voice comparison, on the Desk so it opens on any phone (moved from a private page, 16 Nov 2026). */
+:root { --bg:#F3F0FC; --card:#FFFFFF; --ink:#1F3566; --soft:#55658F; --line:#DCD6F0; --accent:#E0408F; --chip:#EAE5FA;
+  --display:"Fredoka", ui-rounded, system-ui, sans-serif; --body:"Inter", system-ui, -apple-system, sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16244D; --card:#22356A; --ink:#FFFFFF; --soft:#C5D2FC; --line:#34497F; --accent:#F06AAA; --chip:#2C4278; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.5 var(--body); }
+.wrap { max-width: 640px; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left));
+  display: flex; flex-direction: column; gap: 14px; }
+a.back { color: var(--accent); font-weight: 600; text-decoration: none; }
+h1 { font: 600 clamp(28px, 7vw, 38px)/1.1 var(--display); margin: 0; }
+.lede { color: var(--soft); margin: 0 0 6px; }
+.ask { background: var(--card); border: 2px solid var(--accent); border-radius: 16px; padding: 12px 14px; }
+.voice { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px 14px 10px; display: flex; flex-direction: column; gap: 8px; }
+.voice.now { border-style: dashed; }
+.head { display: flex; align-items: center; gap: 10px; }
+.letter { font: 600 20px var(--display); width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--bg); flex: none; }
+.now .letter { background: var(--chip); color: var(--ink); font-size: 13px; }
+.name { font-weight: 700; min-width: 0; }
+.name small { display: block; font-weight: 500; color: var(--soft); font-size: 13.5px; }
+.line { display: grid; grid-template-columns: 62px 1fr; align-items: center; gap: 8px; }
+.line span { font: 700 11.5px var(--body); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+audio { width: 100%; height: 36px; min-width: 0; }
+.lines { background: var(--chip); border-radius: 14px; padding: 10px 14px; font-size: 14.5px; }
+.lines ol { margin: 4px 0 0; padding-left: 20px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← Back to the Desk</a>
+  <h1>Smidgeon's new voice</h1>
+  <p class="lede">Eight young-sounding candidates. Each says the same three lines. Today's voice is first, so you can compare.</p>
+  <div class="ask"><b>Your pick:</b> on the Desk, reply on the task "Pick Smidgeon's new voice" with the letter you like, or two letters to mix. Then all of Smidgeon's lines are re-recorded in that voice.</div>
+  <div class="lines"><b>The three lines</b><ol>
+    <li><b>Calm:</b> I loved building my tower with Pip.</li>
+    <li><b>Sad:</b> My tower fell down. That was hard.</li>
+    <li><b>Bright:</b> Coo-coo-hooray! Tomorrow is picnic day!</li></ol></div>
+  <main id="list" style="display:flex;flex-direction:column;gap:14px"></main>
+</div>
+<script>
+const voices = [
+  ["now", "Today", "The voice in the app now"],
+  ["A", "Soft and young", ""], ["B", "Small and bright", ""], ["C", "A playful boy", ""], ["D", "A tiny boy", ""],
+  ["E", "Clear and friendly", ""], ["F", "A soft British child", ""], ["G", "Bright and bubbly", ""], ["H", "Gentle and boyish", ""],
+];
+const list = document.getElementById("list");
+for (const [id, name, note] of voices) {
+  const el = document.createElement("section");
+  el.className = "voice" + (id === "now" ? " now" : "");
+  el.innerHTML = `<div class="head"><div class="letter">${id === "now" ? "now" : id}</div><div class="name">${name}${note ? `<small>${note}</small>` : ""}</div></div>` +
+    ["calm", "sad", "bright"].map(t => `<div class="line"><span>${t}</span><audio controls preload="none" src="voice/${id}-${t}.mp3"></audio></div>`).join("");
+  list.append(el);
+}
+document.addEventListener("play", e => { document.querySelectorAll("audio").forEach(a => { if (a !== e.target) a.pause(); }); }, true);
+</script>
+</body>
+</html>
