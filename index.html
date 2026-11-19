@@ -74,6 +74,12 @@ button:focus-visible, textarea:focus-visible, summary:focus-visible, a:focus-vis
 .log div { background: var(--surface); border-radius: 14px; padding: 10px 14px; border: 1px solid var(--line); overflow-wrap: anywhere; }
 .log small { display: block; font-size: 13px; color: var(--soft); }
 .empty { color: var(--soft); }
+/* General feedback: one box, not tied to a task. 16px+ text so phones don't zoom in. */
+.feedback form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.feedback textarea { min-height: 120px; font-size: 16px; padding: 10px 12px; }
+.feedback .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.feedback .btn { min-height: 44px; padding: 10px 22px; }
+.feedback .saved.err { color: var(--accent); }
 .toggle { font: 700 14px var(--body); color: var(--soft); background: none; border: 0; cursor: pointer; padding: 4px 0; align-self: flex-start; }
 .steam { display: inline-flex; gap: 6px; margin-top: 10px; }
 .steam span { width: 14px; height: 14px; border-radius: 50%; }
@@ -93,6 +99,19 @@ footer { color: var(--soft); font-size: 13px; }
     <div class="summary" id="summary"><span class="pill">Loading…</span></div>
   </header>
 
+  <section aria-labelledby="h-feedback" class="feedback">
+    <h2 id="h-feedback">Anything on your mind?</h2>
+    <div class="card">
+      <p class="lede" style="margin:0">Thoughts, ideas or things that bugged you, about anything. Not tied to a task: it goes straight to Seth.</p>
+      <form id="gf">
+        <textarea name="note" id="gfNote" placeholder="Write your feedback…" aria-label="Your feedback" required></textarea>
+        <div class="row">
+          <button class="btn" type="submit" id="gfSend">Send</button>
+          <span class="saved" id="gfSaved" role="status" aria-live="polite"></span>
+        </div>
+      </form>
+    </div>
+  </section>
   <section aria-labelledby="h-tasks">
     <h2 id="h-tasks">To do</h2>
     <div class="tabs" role="group" aria-label="Show tasks for">
@@ -240,6 +259,28 @@ document.getElementById("copy").addEventListener("click", async () => {
 fetch("data/desk.json", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(d => { desk = d; render(); renderRest(); })
   .catch(() => { document.getElementById("tasks").innerHTML = '<p class="empty">Couldn\'t load the Desk. Try reloading.</p>'; });
+
+// General feedback (Seth, 19 Nov 2026): saved like replies, under the task
+// "general-feedback", and shown to Seth on the Desk as its own triage item.
+(() => {
+  const form = document.getElementById("gf"), note = document.getElementById("gfNote"),
+        send = document.getElementById("gfSend"), saved = document.getElementById("gfSaved");
+  try { note.value = localStorage.getItem("deskFeedbackDraft") || ""; } catch (e) {}
+  note.addEventListener("input", () => { try { localStorage.setItem("deskFeedbackDraft", note.value); } catch (e) {} });
+  form.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const text = note.value.trim();
+    if (!text) { note.focus(); return; }
+    send.disabled = true; saved.classList.remove("err"); saved.textContent = "Sending…";
+    try {
+      await sendDeskReply({ task: "general-feedback", title: "General feedback", from: "Jennie", done: "", note: text });
+      note.value = ""; try { localStorage.removeItem("deskFeedbackDraft"); } catch (e) {}
+      saved.textContent = "Sent to Seth. Thank you!";
+    } catch (e) {
+      saved.classList.add("err"); saved.textContent = "Couldn't send. Your words are kept here; try again in a moment.";
+    } finally { send.disabled = false; }
+  });
+})();
 </script>
 </body>
 </html>
