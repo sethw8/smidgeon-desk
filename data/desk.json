@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "updatedBy": "Seth's Claude",
   "app": {
     "version": "0.2.42 with the team; going to Apple for outside testers",
@@ -320,6 +320,148 @@
       "title": "Pick Smidgeon's new voice",
       "detail": "Listen to today's voice and eight candidates (A to H), each saying the same calm, sad and bright lines. Reply here with the letter you like, or two letters to mix, and all of Smidgeon's lines will be re-recorded in that voice.",
       "link": "https://sethw8.github.io/smidgeon-desk/smidgeon-voice.html"
+    },
+    {
+      "id": "fb-note-ANvsEupe3djJEQDHd9xH7_M",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 100,
+      "status": "open",
+      "added": "2026-11-17",
+      "title": "Seth's note, 17 Nov: Testing",
+      "detail": "Testing\n\n0.2.41 (1) · 17 Nov"
+    },
+    {
+      "id": "fb-note-AC9HfkIWAz8RPN9SXKXj9JY",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 100,
+      "status": "open",
+      "added": "2026-11-01",
+      "title": "Seth's crash report, 1 Nov: App Hard crash on microphone enable",
+      "detail": "App Hard crash on microphone enable\n\n0.2.3 (1) · 1 Nov · came with a crash log (in App Store Connect)"
+    },
+    {
+      "id": "fb-art",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 114,
+      "status": "open",
+      "added": "2026-11-18",
+      "title": "How things look (4)",
+      "detail": "Smidgeon's look, the pictures and where things sit. 4 points from 2 notes; latest 18 Nov.\n\n“Can you put the path back on the ground?” (0.2.42 (1), 18 Nov)\n“Can you cross his wings when it’s read aloud?” (0.2.42 (1), 18 Nov)\n“On the pebbles/build a wall, fill in the white spot between their legs. I think the same pebbles story was used twice.” (0.2.42 (1), 18 Nov)\n“I can’t get back to the opening pix of Smidgeon, but instead of one puffing up of his chest, there are 2. Looks like boobs! I prefer one.” (0.1.11 (1), 21 Oct)",
+      "updated": "2026-11-18"
+    },
+    {
+      "id": "fb-story-choices",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 113,
+      "status": "open",
+      "added": "2026-11-18",
+      "title": "Story choices and \"wrong\" answers (3)",
+      "detail": "How the choices in stories work, and what happens after a less helpful choice. 3 points from 3 notes; latest 18 Nov.\n\n“Can I choose to talk to Jennie about a problem that came up today or tell Jennie about how I returned to ‘still’ on my own?” (0.2.42 (1), 18 Nov)\n“I’m trying different answers to the dilemma posed to test the response. If I choose the ‘wrong’ response, the reading still goes back to the preferred answer. Can you suggest discussion when the wrong answer is chosen? If i choose ‘disaster’, for example, rather than just repeating the preferred answer, can you suggest why this answer is too emotional and how to manage this feeling to lower the reaction level?” (0.1.17 (1), 29 Oct)\n“I played one question, and there were only 2 options. I prefer 3 with one option pointing to the real issue? Why was he mad to have the bird join the game after they had already started playing? What options would allow the bird to join the game? Am I asking for too much information to be given?” (0.1.11 (1), 21 Oct)",
+      "updated": "2026-11-18"
+    },
+    {
+      "id": "fb-navigation",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 115,
+      "status": "open",
+      "added": "2026-10-21",
+      "title": "Getting around: back, close and dead ends (1)",
+      "detail": "Moving between screens: going back, button labels, getting stuck. 1 point from 1 note; latest 21 Oct.\n\n“After the game, the blue button says ‘close’ not ‘back’. Should the voice match the text on the button?” (0.1.11 (1), 21 Oct)",
+      "updated": "2026-10-21"
+    },
+    {
+      "id": "fb-bugs",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 110,
+      "status": "open",
+      "added": "2026-11-02",
+      "title": "Bugs and things not working (4)",
+      "detail": "Crashes, freezes and features that didn't respond. 4 points from 3 notes; latest 2 Nov.\n\n“Something is not working. If I choose another way to play, I can’t go back to the path pix and it locks up. There is no clear navigation from one screen to another.” (0.2.4 (1), 2 Nov)\n“The Resilience Tree does not update when I play more games. I think I am choosing the correct responses. Also, I don’t see 12 branches.” (0.1.12 (1), 23 Oct)\n“I played all the new games, but my tree didn’t have any new branches. Why not?” (0.1.12 (1), 22 Oct)\n“Grown up still not working.” (0.1.12 (1), 22 Oct)",
+      "updated": "2026-11-02"
+    },
+    {
+      "id": "fb-words-voice",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 116,
+      "status": "open",
+      "added": "2026-11-18",
+      "title": "Words, reading aloud and voices (6)",
+      "detail": "Wording, mispronunciations, what the reader says, and voice choices. 6 points from 4 notes; latest 18 Nov.\n\n“In Settings, can you give the user choices for Smidgeon’s voice like you did for the reader?” (0.2.42 (1), 18 Nov)\n“can you use a different example for proud other than blocks? Blocks were used for another word.” (0.2.42 (1), 18 Nov)\n“Check the reading of the ‘proud’ accomplishments. I think the reader missed one or 2.” (0.2.42 (1), 18 Nov)\n“Reader read ‘breathed’ incorrectly.” (0.1.15 (1), 26 Oct)\n“The wording of the picnic reads that the picnic will last 3 days, rather than the planning took 3 days.” (0.1.12 (1), 23 Oct)\n“There was one scenario that the voice read incorrectly. Confusing.” (0.1.12 (1), 22 Oct)",
+      "updated": "2026-11-18"
+    },
+    {
+      "id": "fb-praise",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 119,
+      "status": "open",
+      "added": "2026-10-29",
+      "title": "What's working (5)",
+      "detail": "Things testers said they liked. 5 points from 3 notes; latest 29 Oct.\n\n“On the game, I noticed a ‘do over’ icon. I like that too!” (0.1.18 (1), 29 Oct)\n“I really think you are developing something special” (0.1.15 (1), 26 Oct)\n“Good improvements” (0.1.15 (1), 26 Oct)\n“Good positive feedback at the bottom of the page w a heart.” (0.1.15 (1), 26 Oct)\n“It’s getting better and better every update!” (0.1.15 (1), 26 Oct)",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "fb-progress",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 112,
+      "status": "open",
+      "added": "2026-11-18",
+      "title": "Seeing progress: the tree, the forest, the journal (7)",
+      "detail": "Ways to see and revisit what's been learned: labels, reviewing a day, the Feeling Book. 7 points from 5 notes; latest 18 Nov.\n\n“Journal-I like the pointer about what to see next” (0.2.42 (1), 18 Nov)\n“I like the Feeling Book! Good review of the feelings reviewed.” (0.1.18 (1), 29 Oct)\n“On the Feelings Book, what if tapping the circle could take you back to the original exercise for that emotion?” (0.1.18 (1), 29 Oct)\n“Let’s say this day was ‘sad’, put a label above the tree to identify what was the theme that day. Then, if I need to go back and review a lesson, I can find it easily.” (0.1.17 (1), 29 Oct)\n“Forest - Put a label over the tree for the theme of that day” (0.1.17 (1), 29 Oct)\n“Feeling of the day. Could label the Forest tree with the feeling of the day. Good review for how many feeling have been discussed.” (0.1.15 (1), 26 Oct)\n“Is there away to repeat a day that might need a reminder? Maybe the label on the tree in the forest can repeat a day?” (0.1.15 (1), 26 Oct)",
+      "updated": "2026-11-18"
+    },
+    {
+      "id": "fb-grown-ups",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 117,
+      "status": "open",
+      "added": "2026-10-29",
+      "title": "Guidance for grown-ups and ways through feelings (4)",
+      "detail": "The grown-up prompts and tips, and ideas for more follow-up and calming strategies. 4 points from 2 notes; latest 29 Oct.\n\n“Some games are doing what I suggested about bringing emotions down and suggesting other ways to handle a situation. For example building the sand castle.” (0.1.17 (1), 29 Oct)\n“Liked the grown up prompts. Provides good information.” (0.1.15 (1), 26 Oct)\n“Each time it tells the grown up to ‘get low’. Good reminder to get down to child’s level.” (0.1.15 (1), 26 Oct)\n“Can you suggest more follow up ideas for each emotion?” (0.1.15 (1), 26 Oct)",
+      "updated": "2026-10-29"
+    },
+    {
+      "id": "fb-day-shape",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 118,
+      "status": "open",
+      "added": "2026-10-26",
+      "title": "The shape of the day (1)",
+      "detail": "How many games a day, and how the day is paced. 1 point from 1 note; latest 26 Oct.\n\n“How many games per day? 5? 6? 9?” (0.1.15 (1), 26 Oct)",
+      "updated": "2026-10-26"
+    },
+    {
+      "id": "fb-learning-games",
+      "for": "Seth",
+      "area": "Tester feedback",
+      "kind": "review",
+      "order": 111,
+      "status": "open",
+      "added": "2026-11-18",
+      "title": "The learning games (2)",
+      "detail": "Rooftop Hop, Letters and Remember Three: what landed and what to add. 2 points from 1 note; latest 18 Nov.\n\n“LOVE the gazebo pix. LOVE the idea to spot letters around the environment. Can Smidgeon’s voice read the letters?” (0.2.42 (1), 18 Nov)\n“Roof top counting-LOVE it! After saying ‘You did it!’ ask how do you feel?” (0.2.42 (1), 18 Nov)",
+      "updated": "2026-11-18"
     }
   ],
   "log": [
