@@ -54,10 +54,11 @@
       "area": "General feedback",
       "kind": "review",
       "order": 90,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-19",
-      "title": "Jennie's feedback, 19 Nov: TEST from Seth's Claude (19 Nov): checking the general feedback box s…",
-      "detail": "TEST from Seth's Claude (19 Nov): checking the general feedback box saves. Please ignore.\n\nSent from the Desk's feedback box, 19 Nov, 11:55 AM."
+      "title": "Test entry (Seth's Claude), 19 Nov: TEST from Seth's Claude (19 Nov): checking the general feedback box s…",
+      "detail": "TEST from Seth's Claude (19 Nov): checking the general feedback box saves. Please ignore.\n\nSent from the Desk's feedback box, 19 Nov, 11:55 AM.",
+      "doneAt": "2026-11-19"
     },
     {
       "id": "learning-games",
