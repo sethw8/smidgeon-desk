@@ -27,7 +27,7 @@
       },
       {
         "label": "Recording your voice",
-        "url": "https://claude.ai/artifact/5a9ks3KmUZYVjnVEZWZsCG"
+        "url": "https://sethw8.github.io/smidgeon-desk/recording-your-voice.html"
       },
       {
         "label": "Story Spec",
@@ -1169,8 +1169,8 @@
       "status": "open",
       "added": "2026-10-22",
       "title": "Your voice sample",
-      "detail": "1-2 minutes of clean reading so Jennie's lines can be in your own voice, with your consent. Script in \"Smidgeon Scholars: recording your voice\".",
-      "link": "https://claude.ai/artifact/5a9ks3KmUZYVjnVEZWZsCG",
+      "detail": "1-2 minutes of clean reading so Jennie's lines can be in your own voice, with your consent. The script and tips are on the Desk (opens in Safari).",
+      "link": "https://sethw8.github.io/smidgeon-desk/recording-your-voice.html",
       "answer": "When I click that open it link it app switches me out on my phone to Claude and then Claude says cannot find page."
     },
     {
