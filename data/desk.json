@@ -2,7 +2,7 @@
   "updated": "2026-11-22",
   "updatedBy": "Seth's Claude",
   "app": {
-    "version": "0.2.45 with the team; going to Apple for outside testers",
+    "version": "0.2.46 with the team; going to Apple for outside testers",
     "summary": "Smidgeon Scholars, 12 November 2026. Test build 0.2.26 is with testers. This replaces the older \"Where the app is now\" (0.1.21). Jennie decides what children learn and every word they and their grown-ups hear; Seth's side builds it. Anything marked a draft is Seth's placeholder wording waiting for Jennie.\n\nFive tabs: Today, Journal, Flock, Help me (call Jennie), Settings.\n\nTODAY: one feeling a day, the same for every family (e.g. \"The Nervous Feeling\"). A journey map of about ten stops in a fixed order: mailbox (the feeling arrives as a group chat with Smidgeon and Jennie), pinwheel (breathing), drum (move your body), Feeling Mirror (make the face, then \"What does nervous look like to you? Practice with your grown-up.\"), Feeling Pairs, a call with Jennie (the child says how they feel; kept on the phone only), the nest, Sun/Cloud/Rainbow, and a present. Each stop ends with a celebration line. The day ends at home: Smidgeon on the windowsill at lunch, dinner, tidy-up or bedtime, with a question and a helper job. The path is once a day.\n\nJOURNAL: a calendar of days, each a postcard: Smidgeon acting out the feeling, the date as a stamp, coins for what we did, and what we said as chat bubbles. How I felt (pick a face) and What we did (coins in Me, Nest, The Flock). A deed done 1/3/5/10 times becomes copper/bronze/silver/gold. Filling in the day is a Stories-style sequence. \"Days together\" never resets: no broken streaks.\n\nFLOCK (anonymous): a feed of families' postcards with each family's emoji and a made-up kind name, never real names, and hearts. Example families fill it until real ones join. Sharing is off until a grown-up turns it on. Nothing is sent anywhere yet: the real feed (Apple's CloudKit) waits for a children's-privacy (COPPA) review and Jennie's approval of the copy.\n\nHELP ME: call Jennie any time about one feeling.\n\nSETTINGS: tips and printouts, emoji and skin tone, save what we tell Jennie, read everything aloud, flock sharing, narrator voice.\n\nPRINCIPLES: tandem (child and grown-up together); Smidgeon shows, Jennie coaches; steam shows how big a feeling is, never good or bad; never marked wrong; built for pre-readers; resolve and pause before moving on; no red except hang-up and hearts.\n\nHOW TO HELP: suggest wording, order and what children learn in these terms, so Seth's side can drop it straight in. Most words and stories change without a new app version.",
     "links": [
       {
@@ -1174,7 +1174,7 @@
       "status": "open",
       "added": "2026-10-31",
       "title": "Five questions still open from the sync doc",
-      "detail": "1) Emergency or Disaster for the third steam size? 2) Sequencing: unlock skills in order (letters s-a-t-p-i-n) or rotate? 3) Rooftop Hop and Letters: pacing, word lists, the grown-up's role. 4) Older kids: together-only for good, or a Solo mode later? 5) Retype your Message Route comment (\"Solo routes add counting...\"). The other five (day length, learning areas, Feeling Day, voice, drafted copy) look settled by the journey design or are tasks of their own; Seth to confirm.",
+      "detail": "1) Emergency or Disaster for the third steam size? 2) Sequencing: unlock skills in order (letters s-a-t-p-i-n) or rotate? 3) Rooftop Hop and Letters: pacing, word lists, the grown-up's role. 4) Older kids: together-only for good, or a Solo mode later? 5) Retype your Message Route comment (\"Solo routes add counting...\"). The other five (day length, learning areas, Feeling Day, voice, drafted copy) look settled by the journey design or are tasks of their own; Seth to confirm.\n\n(22 Nov: Seth decided question 4: Solo mode for 5 and up, built in the next build.)",
       "link": "https://claude.ai/artifact/Cn4rFJWSK3rzMKgEVLYkgn"
     },
     {
@@ -1364,6 +1364,61 @@
       "added": "2026-11-22",
       "title": "\"What we did\": a row for your own",
       "detail": "Your idea: the 18 coins stay, and there's a fourth group, \"Ours\", where a grown-up adds their own (up to six), like \"Fed the cat\". It shows as a fourth row on \"What we did\" and a tab in the journal.\n\nWords (drafts): \"Ours\" · \"Add your own\" · \"Something we did\" · \"e.g. Fed the cat\" · \"Add\" · \"Cancel\" · \"Remove\"."
+    },
+    {
+      "id": "letters-match",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 10,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Smidgeon's Letters: a sound-matching step",
+      "detail": "From your Phonics Plan v2: after Smidgeon meets the day's letters, three quick questions using only letters met so far, before the blending word. They take turns: hear a pure sound and tap the capital letter that makes it, or see a capital and tap the picture that starts with its sound (sun, apple…). C and K never appear together as choices. Two misses: Smidgeon is frustrated, then happy when they get it; nothing is marked wrong.\n\nWords (drafts, recorded): \"Which letter makes this sound?\" · \"Which one starts with this sound?\" · \"Listen again.\""
+    },
+    {
+      "id": "age-birthday",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 11,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Age and birthday, and a birthday hello",
+      "detail": "Seth's idea: the welcome now asks the child's age and birthday (month and day), kept only on the phone. On their birthday Smidgeon celebrates once, and a little cake marks the day in the journal. Solo mode and make-your-own-bird open at 5 and up.\n\nWords (drafts): \"How old is your little one?\" · \"When's their birthday?\" · \"Just for birthday hellos. It stays on this phone.\" · \"Happy birthday!\" · \"You're 5 today!\""
+    },
+    {
+      "id": "my-bird",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 12,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Make your own bird (first version, 5 and up)",
+      "detail": "Your idea, small first version: a child picks a colour (Berry, Sunset, Acorn, Meadow, Forest, Lagoon) and a name, then fills in their bird's story one blank at a time with picture choices or their own words. Their bird then appears beside Smidgeon in the day's story.\n\nWords (drafts): \"Make your own bird!\" · \"What's your bird called?\" (Pip-squeak, Feathers, Sunny, Bean, Puff, Ziggy) · \"<Name> loves ____\" (berries, kites, splashing, singing) · \"<Name>'s favourite place is ____\" (the big tree, the pond, the nest, the garden) · \"When <Name> feels frustrated, it ____\" (takes a big breath, asks for a hug, goes for a walk, says how it feels) · \"Meet <Name>!\""
+    },
+    {
+      "id": "whats-new",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 13,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "\"What's new\" for families who started earlier",
+      "detail": "Seth's idea: families who did the welcome before something new was added see one small \"New\" note above the day's button (at most one a day; Later, or No thanks), and all of them are listed in Settings.\n\nWords (drafts): \"New: add their birthday\" / \"We'll celebrate with Smidgeon on the day. It stays on this phone.\" · \"New: pick your flock name\" / \"Choose the kind word in your pretend flock name, like Dreamy Dino.\" · \"New: add your own coins\" / \"In \\\"What we did\\\", grown-ups can now add their own things, like \\\"Fed the cat\\\".\""
+    },
+    {
+      "id": "solo-corner",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 14,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Play on my own (5 and up)",
+      "detail": "Seth's call: once a child is 5 or older (from the age in the welcome), Home shows an \"On my own\" button. It opens a corner with Rooftop Hop, Smidgeon's Letters, Remember Three and their own bird, to play without a grown-up (in Rooftop Hop the child takes every turn). The feelings journey stays something you do together.\n\nWords (drafts): \"Play on my own\" · \"On my own\" · \"Make your own bird\" / \"My bird: Sunny\" · What's new: \"New: play on my own\" / \"For 5 and up: the learning games to play on their own, and make their own bird.\""
     }
   ],
   "log": [
