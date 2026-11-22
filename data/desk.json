@@ -575,7 +575,7 @@
       "area": "Feedback · Learning games",
       "kind": "approve",
       "order": 40,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-20",
       "title": "Feelings inside the games: frustrated, happy, proud",
       "quotes": [
@@ -595,7 +595,10 @@
       "relevant": "Yes: the games end with a proud Smidgeon, but there's no frustrated beat after misses and no \"How do you feel?\".",
       "fix": "In Remember Three, Rooftop Hop, Letters and the counting moments: Smidgeon looks frustrated after two misses (and takes a breath), happy when right, proud at the end, then asks \"How do you feel?\" with the feeling faces. Words drafted for Jennie.",
       "action": "Approve, then send the words to Jennie",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.44",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T11:48-05:00"
     },
     {
       "id": "jennie-hop-pips",
@@ -1171,11 +1174,14 @@
       "area": "Decisions",
       "kind": "decide",
       "order": 2,
-      "status": "open",
+      "status": "done",
       "added": "2026-10-31",
       "title": "How illustrated Jennie looks",
       "detail": "Jennie appears as an illustrated character on calls and in the Help me tab. Approve her look, or say what to change.",
-      "answer": "Jennie’s eyes seem a little too close together"
+      "answer": "Jennie’s eyes seem a little too close together",
+      "closed": "Built in 0.2.44",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T11:48-05:00"
     },
     {
       "id": "voice-sample",
