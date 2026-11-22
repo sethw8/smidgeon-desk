@@ -190,12 +190,13 @@ const safeUrl = u => /^https:\/\//.test(u || "") ? u : "";
 
 function render() {
   const all = (desk.tasks || []).map(withTicks);
-  const mine = all.filter(t => who === "all" || t.for === who);
+  const forMe = t => t.for === who || t.for === "Both";  // "Both": a card for Seth and Jennie alike (22 Nov 2026)
+  const mine = all.filter(t => who === "all" || forMe(t));
   const later = mine.filter(t => t.status === "later");
   const open = mine.filter(t => t.status !== "done" && t.status !== "later"), done = mine.filter(t => t.status === "done");
   document.getElementById("summary").innerHTML =
-    `<span class="pill"><b>${all.filter(t => t.for === "Jennie" && t.status === "open").length}</b> for 🍎 Jennie</span>` +
-    `<span class="pill"><b>${all.filter(t => t.for === "Seth" && t.status === "open").length}</b> for 🛠️ Seth</span>` +
+    `<span class="pill"><b>${all.filter(t => (t.for === "Jennie" || t.for === "Both") && t.status === "open").length}</b> for 🍎 Jennie</span>` +
+    `<span class="pill"><b>${all.filter(t => (t.for === "Seth" || t.for === "Both") && t.status === "open").length}</b> for 🛠️ Seth</span>` +
     `<span class="pill">App: ${esc(desk.app && desk.app.version)}</span>`;
   const box = document.getElementById("tasks");
   box.innerHTML = "";
@@ -242,7 +243,7 @@ function card(t) {
     ${quotes}
     <div class="detail"></div>
     ${facts}
-    ${t.action && !isDone && t.status !== "later" ? `<div class="call">${t.for === "Jennie" ? "Your call" : "Seth"}: <span class="f-act"></span></div>` : ""}
+    ${t.action && !isDone && t.status !== "later" ? `<div class="call">${t.for === "Seth" ? "Seth" : "Your call"}: <span class="f-act"></span></div>` : ""}
     ${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">Open it</a>` : ""}
     ${t.answer ? `<div class="detail"><b>Answer:</b> <span class="ans"></span></div>` : ""}
     ${mark ? `<div class="donemark">✓ <span class="f-mark"></span></div>` : ""}

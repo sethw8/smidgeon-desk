@@ -1422,6 +1422,18 @@
       "added": "2026-11-22",
       "title": "Play on my own (5 and up)",
       "detail": "Seth's call: once a child is 5 or older (from the age in the welcome), Home shows an \"On my own\" button. It opens a corner with Rooftop Hop, Smidgeon's Letters, Remember Three and their own bird, to play without a grown-up (in Rooftop Hop the child takes every turn). The feelings journey stays something you do together.\n\nWords (drafts): \"Play on my own\" · \"On my own\" · \"Make your own bird\" / \"My bird: Sunny\" · What's new: \"New: play on my own\" / \"For 5 and up: the learning games to play on their own, and make their own bird.\""
+    },
+    {
+      "id": "app-icon-pick",
+      "for": "Both",
+      "area": "App",
+      "kind": "decide",
+      "order": 0,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Pick the app icon: A to F",
+      "detail": "The six options from 16 November, each shown next to today's icon at real home-screen size on a light and a dark wallpaper. A (cheering, starburst) and C (flying with a letter) were the favourites. Reply with your letter (or \"keep today's\"). The app keeps today's icon until one is picked.",
+      "link": "https://sethw8.github.io/smidgeon-desk/app-icon.html"
     }
   ],
   "log": [

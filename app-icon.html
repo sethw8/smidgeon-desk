@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>App Icon Options · Smidgeon Desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* The six app icon options from 16 Nov, next to today's icon, for Seth and Jennie to pick from (22 Nov 2026). */
+:root { --bg:#F3F0FC; --card:#FFFFFF; --ink:#1F3566; --soft:#55658F; --line:#DCD6F0; --accent:#E0408F;
+  --display:"Fredoka", ui-rounded, system-ui, sans-serif; --body:"Inter", system-ui, -apple-system, sans-serif; color-scheme: light; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16244D; --card:#22356A; --ink:#FFFFFF; --soft:#C5D2FC; --line:#34497F; --accent:#F06AAA; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 400 17px/1.55 var(--body); }
+.wrap { max-width: 760px; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) 64px max(16px, env(safe-area-inset-left));
+  display: flex; flex-direction: column; gap: 14px; }
+a.back { color: var(--accent); font-weight: 600; text-decoration: none; }
+h1 { font: 600 clamp(28px, 7vw, 38px)/1.1 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 600 23px/1.2 var(--display); margin: 10px 0 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+p { margin: 0; }
+.lede { color: var(--soft); }
+img { width: 100%; height: auto; display: block; border-radius: 14px; border: 1px solid var(--line); }
+.opt { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.fav { font: 700 12px var(--body); letter-spacing: .06em; text-transform: uppercase; color: #fff; background: var(--accent); border-radius: 999px; padding: 3px 10px; }
+.note { font-size: 15px; color: var(--soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">‹ Smidgeon Desk</a>
+  <h1>Pick an app icon</h1>
+  <p class="lede">The six options from 16 November, A to F, each next to the icon in the app today. The small ones are the real home-screen size, on a light and a dark wallpaper. A and C were the favourites. Tell us your pick on the Desk card; the app keeps today's icon until one is chosen.</p>
+  <img src="icons/overview.jpg" alt="Today's icon and options A to F at home-screen size on a light and a dark wallpaper. A and C have a pink dot as favourites.">
+
+  <h2>Today (in the app now)</h2>
+  <p class="note">Smidgeon waving in a sunburst, with grass and flowers. It came from option F on 16 November.</p>
+  <img src="icons/row-today.jpg" alt="Today's icon, large and on light and dark wallpapers">
+
+  <div class="opt"><h2>A · cheering, starburst <span class="fav">Favourite</span></h2>
+    <img src="icons/row-a.jpg" alt="Option A: Smidgeon cheering with wings up in a starburst"></div>
+  <div class="opt"><h2>B · swooping, starburst</h2>
+    <img src="icons/row-b.jpg" alt="Option B: Smidgeon swooping in a starburst"></div>
+  <div class="opt"><h2>C · flying with a letter <span class="fav">Favourite</span></h2>
+    <img src="icons/row-c.jpg" alt="Option C: Smidgeon flying with a letter in his beak, in a starburst"></div>
+  <div class="opt"><h2>D · hopping, sky</h2>
+    <img src="icons/row-d.jpg" alt="Option D: Smidgeon hopping in a plain sky"></div>
+  <div class="opt"><h2>E · waving, rainbow</h2>
+    <img src="icons/row-e.jpg" alt="Option E: Smidgeon waving in front of a rainbow"></div>
+  <div class="opt"><h2>F · close-up, starburst</h2>
+    <img src="icons/row-f.jpg" alt="Option F: a close-up of Smidgeon waving in a starburst"></div>
+</div>
+</body>
+</html>
