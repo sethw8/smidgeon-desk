@@ -184,7 +184,7 @@
       "area": "Feedback · Today's journey",
       "kind": "approve",
       "order": 21,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-20",
       "title": "\"Later\" on the call needs its own words",
       "quotes": [
@@ -198,7 +198,10 @@
       "relevant": "Yes: \"Later\" goes to the same line as finishing the call (\"Talking about it helps. I feel lighter already.\").",
       "fix": "Give \"Later\" its own line, in Jennie's words: \"Looking forward to talking about your feelings soon!\", recorded.",
       "action": "Approve (the wording is Jennie's)",
-      "detail": ""
+      "detail": "",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T10:29-05:00",
+      "closed": "Built in 0.2.43"
     },
     {
       "id": "fb-AGvMjuBz8-8",
@@ -611,7 +614,7 @@
           "text": "Sometimes near the end of the game the pips on the die don’t match up to the remaining hops. Let’s make sure it’s a perfect fit every time. An idea for the next progression is to count on if the pips on the die and the remaining spots don’t match."
         }
       ],
-      "relevant": "Yes: the die rolls 1 up to its top number whatever is left, so near the nest it can show more pips than roofs.",
+      "relevant": "Half done in 0.2.43: the die now always fits the roofs left. Counting on comes in batch 3.",
       "fix": "Near the end, roll only up to the roofs left so pips and hops always match. Next step: when they don't match, count on from where Smidgeon is.",
       "action": "Approve",
       "detail": ""
@@ -1129,10 +1132,13 @@
       "area": "Today's journey",
       "kind": "review",
       "order": 3,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-11",
       "title": "End of the day at home",
-      "detail": "Titles (\"Back to still. Time to tidy up!\", \"Bedtime soon!\", \"Time for dinner!\"), the question to ask at the table or while tidying, the helper jobs, and the button \"Fill in today's journal\"."
+      "detail": "Titles (\"Back to still. Time to tidy up!\", \"Bedtime soon!\", \"Time for dinner!\"), the question to ask at the table or while tidying, the helper jobs, and the button \"Fill in today's journal\".",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T10:29-05:00",
+      "closed": "Built in 0.2.43"
     },
     {
       "id": "game-lines",
@@ -1182,7 +1188,7 @@
       "title": "Your voice sample",
       "detail": "1-2 minutes of clean reading so Jennie's lines can be in your own voice, with your consent. The script and tips are on the Desk (opens in Safari).",
       "link": "https://sethw8.github.io/smidgeon-desk/recording-your-voice.html",
-      "answer": "When I click that open it link it app switches me out on my phone to Claude and then Claude says cannot find page."
+      "answer": "When I click that open it link it app switches me out on my phone to Claude and then Claude says cannot find page. — Fixed 22 Nov: \"Open it\" now goes to a Desk page that opens in Safari."
     },
     {
       "id": "letter-sounds",
@@ -1269,6 +1275,11 @@
     }
   ],
   "log": [
+    {
+      "date": "2026-11-22",
+      "from": "Seth's Claude",
+      "text": "Test build 0.2.43 (team): the Hop die always fits the roofs left; \"Count your steps to your bedroom (or bathroom)\"; \"Later\" on the call says \"Looking forward to talking about your feelings soon!\"; an empty journal day says \"Ready for your words.\"; Smidgeon's Sun, Cloud and Rainbow lines now vary (new lines to approve on the Desk); the voice-sample guide opens in Safari."
+    },
     {
       "date": "2026-11-22",
       "from": "Seth's Claude",
