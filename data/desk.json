@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-22",
   "updatedBy": "Seth's Claude",
   "app": {
     "version": "0.2.42 with the team; going to Apple for outside testers",
@@ -49,6 +49,925 @@
   ],
   "tasks": [
     {
+      "id": "gf-20261120-205824",
+      "for": "Seth",
+      "area": "Feedback · Testers",
+      "kind": "do",
+      "order": 1,
+      "status": "done",
+      "added": "2026-11-20",
+      "title": "Add Maia and Jono to TestFlight",
+      "quotes": [
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "Add Maia and Jono to test group asap"
+        }
+      ],
+      "relevant": "Yes: they aren't testers yet.",
+      "fix": "Invite both to The Flock (outside testers) in App Store Connect.",
+      "action": "Nothing: they're already testers",
+      "detail": "",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-22",
+      "closed": "Done: already testers (Seth, 22 Nov)"
+    },
+    {
+      "id": "jennie-intermission-poses",
+      "for": "Jennie",
+      "area": "Feedback · Smidgeon's look and poses",
+      "kind": "decide",
+      "order": 5,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "What should Smidgeon's in-between poses look like?",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Can you cross his wings when it’s read aloud?"
+        }
+      ],
+      "relevant": "Yes: Smidgeon has no listening or waiting poses for when words are read aloud.",
+      "fix": "Jennie describes the poses (for example wings crossed while listening, a thinking pose); then we make new animated clips.",
+      "action": "Jennie decides; Seth then approves the clips",
+      "detail": "Seth, 21 Nov: we'll make new assets for Smidgeon's in-between moments, like crossing his wings. Which poses should there be, and when should each show?"
+    },
+    {
+      "id": "fb-AGvMjuBz8-5",
+      "for": "Seth",
+      "area": "Feedback · Smidgeon's look and poses",
+      "kind": "decide",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Cross his wings while words are read aloud",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Can you cross his wings when it’s read aloud?"
+        }
+      ],
+      "relevant": "Yes, and now a question for Jennie.",
+      "fix": "Moved to Jennie's item: what Smidgeon's in-between poses look like.",
+      "action": "Nothing: waiting on Jennie",
+      "detail": "",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-21T10:24-05:00",
+      "closed": "Sent to Jennie (Seth's call)"
+    },
+    {
+      "id": "fb-AJXiP_6XbB-1",
+      "for": "Seth",
+      "area": "Feedback · Smidgeon's look and poses",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "One chest puff, not two",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.11",
+          "date": "21 Oct",
+          "text": "Instead of one puffing up of his chest, there are 2. I prefer one."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AGvMjuBz8-1",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "decide",
+      "order": 20,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Put the map's path back on the ground",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Can you put the path back on the ground?"
+        }
+      ],
+      "relevant": "Probably: the trail is drawn as a line over the painted map, so it can read as floating. Needs a look on a phone.",
+      "fix": "Draw the trail as a worn path under the stops (softer, shaded into the grass) rather than a line on top.",
+      "action": "Decide: look at the map, then approve the fix",
+      "detail": ""
+    },
+    {
+      "id": "gf-20261120-143232",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "approve",
+      "order": 21,
+      "status": "open",
+      "added": "2026-11-20",
+      "title": "\"Later\" on the call needs its own words",
+      "quotes": [
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "When you ask to do the call later, the prompt screen should not be ‘talking about it helps I feel lighter already.’ It should be ‘looking forward to talking about your feelings soon!’"
+        }
+      ],
+      "relevant": "Yes: \"Later\" goes to the same line as finishing the call (\"Talking about it helps. I feel lighter already.\").",
+      "fix": "Give \"Later\" its own line, in Jennie's words: \"Looking forward to talking about your feelings soon!\", recorded.",
+      "action": "Approve (the wording is Jennie's)",
+      "detail": ""
+    },
+    {
+      "id": "fb-AGvMjuBz8-8",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "decide",
+      "order": 22,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Let the child choose what to talk to Jennie about",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Can I choose to talk to Jennie about a problem that came up today or tell Jennie about how I returned to ‘still’ on my own?"
+        }
+      ],
+      "relevant": "Yes: the call only asks about the day's feeling.",
+      "fix": "Start the call with two picture choices: \"Something that happened today\" or \"How I got back to still\".",
+      "action": "Decide, then send the wording to Jennie",
+      "detail": ""
+    },
+    {
+      "id": "fb-AEUwBc6wRS",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "approve",
+      "order": 23,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Locked up after \"another way to play\"",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.4",
+          "date": "2 Nov",
+          "text": "If I choose another way to play, I can’t go back to the path pix and it locks up. There is no clear navigation from one screen to another."
+        }
+      ],
+      "relevant": "Likely fixed: \"another way to play\" is gone; map stops are tapped directly and every stop has a back button.",
+      "fix": "None. Close it, and reopen if it happens again.",
+      "action": "Approve closing",
+      "detail": ""
+    },
+    {
+      "id": "fb-note-AC9HfkIWAz8RPN9SXKXj9JY",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 24,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Crash when turning on the microphone",
+      "quotes": [
+        {
+          "who": "Seth",
+          "build": "0.2.3",
+          "date": "1 Nov",
+          "text": "App Hard crash on microphone enable"
+        }
+      ],
+      "relevant": "Not seen in later builds.",
+      "fix": "None.",
+      "action": "Nothing",
+      "detail": "Came with a crash log (in App Store Connect, not here).",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-21T10:19-05:00"
+    },
+    {
+      "id": "fb-note-ANvsEupe3djJEQDHd9xH7_M",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 25,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "\"Testing\" (a test note)",
+      "quotes": [
+        {
+          "who": "Seth",
+          "build": "0.2.41",
+          "date": "17 Nov",
+          "text": "Testing"
+        }
+      ],
+      "relevant": "No.",
+      "fix": "None.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-21T10:19-05:00"
+    },
+    {
+      "id": "fb-ANPFYWLfEL",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "The button says \"Close\" but the voice says \"back\"",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.11",
+          "date": "21 Oct",
+          "text": "After the game, the blue button says ‘close’ not ‘back’. Should the voice match the text on the button?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-4",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Praise: the heart at the bottom of the page",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Good positive feedback at the bottom of the page w a heart."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-7",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "How many games a day?",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "How many games per day? 5? 6? 9?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-21T10:27-05:00"
+    },
+    {
+      "id": "fb-AKquHcKTes-2",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Praise: the do-over button",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.18",
+          "date": "30 Oct",
+          "text": "On the game, I noticed a ‘do over’ icon. I like that too!"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-9",
+      "for": "Seth",
+      "area": "Feedback · Today's journey",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Praise: \"getting better and better\"",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "It’s getting better and better every update!"
+        },
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "I really think you are developing something special"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AGvMjuBz8-3",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "decide",
+      "order": 30,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "\"Proud\" needs an example other than blocks",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Can you use a different example for proud other than blocks? Blocks were used for another word."
+        }
+      ],
+      "relevant": "Yes: the proud story rebuilds a block tower, and the frustration story has Smidgeon kick the blocks.",
+      "fix": "Give proud its own accomplishment (for example finishing a puzzle or learning to pump on the swing), drafted for Jennie.",
+      "action": "Send to Jennie",
+      "detail": ""
+    },
+    {
+      "id": "fb-AGvMjuBz8-6",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "decide",
+      "order": 31,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Pebbles: a gap in the wall picture, and pebbles in two stories",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "On the pebbles/build a wall, fill in the white spot between their legs. I think the same pebbles story was used twice."
+        }
+      ],
+      "relevant": "Likely: pebbles are in both \"The pebble circle\" and \"Robin goes\". The white gap needs a look in the scene art.",
+      "fix": "Fill the gap in the scene art; give one of the two stories a different activity.",
+      "action": "Approve the art fix; decide which story changes",
+      "detail": ""
+    },
+    {
+      "id": "fb-AJXiP_6XbB-2",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Three choices instead of two, one pointing to the real issue",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.11",
+          "date": "21 Oct",
+          "text": "I played one question, and there were only 2 options. I prefer 3 with one option pointing to the real issue? Why was he mad to have the bird join the game after they had already started playing?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AClVDrrIwm-2",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Picnic wording: the planning took three days, not the picnic",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.12",
+          "date": "23 Oct",
+          "text": "The wording of the picnic reads that the picnic will last 3 days, rather than the planning took 3 days."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AIf4OVskjZ",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "After a less helpful choice, talk it through instead of repeating the answer",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.17",
+          "date": "29 Oct",
+          "text": "If I choose the ‘wrong’ response, the reading still goes back to the preferred answer. Can you suggest discussion when the wrong answer is chosen?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AOkNtgzHGF",
+      "for": "Seth",
+      "area": "Feedback · Stories",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Praise: games that bring a big feeling down, like the sand castle",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.17",
+          "date": "29 Oct",
+          "text": "Some games are doing what I suggested about bringing emotions down and suggesting other ways to handle a situation. For example building the sand castle."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "gf-20261120-142803",
+      "for": "Seth",
+      "area": "Feedback · Learning games",
+      "kind": "approve",
+      "order": 40,
+      "status": "open",
+      "added": "2026-11-20",
+      "title": "Feelings inside the games: frustrated, happy, proud",
+      "quotes": [
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "When smidgeon is doing his games, some emotional learning should be embedded. For example, smidgeon gets two wrong answers, that’s frustrating. Smidgeon gets it right, happy. Smidgeon finishes, proud."
+        },
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Roof top counting-LOVE it! After saying ‘You did it!’ ask how do you feel?"
+        }
+      ],
+      "relevant": "Yes: the games end with a proud Smidgeon, but there's no frustrated beat after misses and no \"How do you feel?\".",
+      "fix": "In Remember Three, Rooftop Hop, Letters and the counting moments: Smidgeon looks frustrated after two misses (and takes a breath), happy when right, proud at the end, then asks \"How do you feel?\" with the feeling faces. Words drafted for Jennie.",
+      "action": "Approve, then send the words to Jennie",
+      "detail": ""
+    },
+    {
+      "id": "jennie-hop-pips",
+      "for": "Seth",
+      "area": "Feedback · Learning games",
+      "kind": "approve",
+      "order": 41,
+      "status": "open",
+      "added": "2026-11-20",
+      "title": "Rooftop Hop: the die must fit the hops left; count on next",
+      "quotes": [
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "Sometimes near the end of the game the pips on the die don’t match up to the remaining hops. Let’s make sure it’s a perfect fit every time. An idea for the next progression is to count on if the pips on the die and the remaining spots don’t match."
+        }
+      ],
+      "relevant": "Yes: the die rolls 1 up to its top number whatever is left, so near the nest it can show more pips than roofs.",
+      "fix": "Near the end, roll only up to the roofs left so pips and hops always match. Next step: when they don't match, count on from where Smidgeon is.",
+      "action": "Approve",
+      "detail": ""
+    },
+    {
+      "id": "fb-AGvMjuBz8-4",
+      "for": "Seth",
+      "area": "Feedback · Learning games",
+      "kind": "decide",
+      "order": 42,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Should Smidgeon's voice say the letters?",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "LOVE the gazebo pix. LOVE the idea to spot letters around the environment. Can Smidgeon’s voice read the letters?"
+        }
+      ],
+      "relevant": "Yes: the narrator says the letters and their sounds; Smidgeon doesn't speak in Letters.",
+      "fix": "Keep the narrator (Jennie's recordings) for the pure sounds, and let Smidgeon say the words and the \"meet\" lines.",
+      "action": "Decide",
+      "detail": ""
+    },
+    {
+      "id": "fb-AGvMjuBz8-7",
+      "for": "Seth",
+      "area": "Feedback · Journal and progress",
+      "kind": "review",
+      "order": 50,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Praise: the journal's pointer to what to see next",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Journal-I like the pointer about what to see next"
+        }
+      ],
+      "relevant": "Yes, it's still there.",
+      "fix": "None: keep it.",
+      "action": "Nothing: tick when read",
+      "detail": ""
+    },
+    {
+      "id": "fb-AE4AlffP1f-1",
+      "for": "Seth",
+      "area": "Feedback · Journal and progress",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Label each day's tree with its feeling, so a lesson is easy to find",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Could label the Forest tree with the feeling of the day."
+        },
+        {
+          "who": "Sandie",
+          "build": "0.1.17",
+          "date": "29 Oct",
+          "text": "Forest - Put a label over the tree for the theme of that day"
+        },
+        {
+          "who": "Sandie",
+          "build": "0.1.17",
+          "date": "29 Oct",
+          "text": "Let’s say this day was ‘sad’, put a label above the tree to identify what was the theme that day."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-8",
+      "for": "Seth",
+      "area": "Feedback · Journal and progress",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Repeat a day that needs a reminder",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Is there away to repeat a day that might need a reminder?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-APe9TaYrgE-1",
+      "for": "Seth",
+      "area": "Feedback · Journal and progress",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "The tree doesn't grow new branches",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.12",
+          "date": "22 Oct",
+          "text": "I played all the new games, but my tree didn’t have any new branches. Why not?"
+        },
+        {
+          "who": "Sandie",
+          "build": "0.1.12",
+          "date": "23 Oct",
+          "text": "The Resilience Tree does not update when I play more games. Also, I don’t see 12 branches."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AKquHcKTes-3",
+      "for": "Seth",
+      "area": "Feedback · Journal and progress",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Feeling Book: tap a feeling to go back to its exercise",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.18",
+          "date": "30 Oct",
+          "text": "I like the Feeling Book! On the Feelings Book, what if tapping the circle could take you back to the original exercise for that emotion?"
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AGvMjuBz8-10",
+      "for": "Seth",
+      "area": "Feedback · Reading aloud and voices",
+      "kind": "approve",
+      "order": 60,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "The end-of-day reading misses some things we did",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "Check the reading of the ‘proud’ accomplishments. I think the reader missed one or 2."
+        }
+      ],
+      "relevant": "Yes: the lines for the three learning games (Remember Three, Rooftop Hop, Letters) have no recording, so they're silent on testers' phones.",
+      "fix": "Add the three lines to the content with recordings (drafts for Jennie).",
+      "action": "Approve",
+      "detail": ""
+    },
+    {
+      "id": "fb-AGvMjuBz8-2",
+      "for": "Seth",
+      "area": "Feedback · Reading aloud and voices",
+      "kind": "decide",
+      "order": 61,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "Let families choose Smidgeon's voice",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.2.42",
+          "date": "18 Nov",
+          "text": "In Settings, can you give the user choices for Smidgeon’s voice like you did for the reader?"
+        }
+      ],
+      "relevant": "Declined.",
+      "fix": "None: Smidgeon's voice stays the same for everyone.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "Seth",
+      "doneAt": "2026-11-20T21:00-05:00",
+      "closed": "Declined by Seth: Smidgeon's voice must stay consistent"
+    },
+    {
+      "id": "fb-APe9TaYrgE-2",
+      "for": "Seth",
+      "area": "Feedback · Reading aloud and voices",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "A story line was read incorrectly",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.12",
+          "date": "22 Oct",
+          "text": "There was one scenario that the voice read incorrectly. Confusing."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-5",
+      "for": "Seth",
+      "area": "Feedback · Reading aloud and voices",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "\"Breathed\" mispronounced",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Reader read ‘breathed’ incorrectly."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "gf-20261120-205926",
+      "for": "Seth",
+      "area": "Feedback · Settings",
+      "kind": "decide",
+      "order": 70,
+      "status": "open",
+      "added": "2026-11-20",
+      "title": "Kids design their own bird, with a make-your-own story",
+      "quotes": [
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "I would love to eventually move to kids creating their own bird to play along smidgeon like their own character card when they are older (5)"
+        },
+        {
+          "who": "Jennie",
+          "build": "the Desk",
+          "date": "20 Nov",
+          "text": "Kids should be able to design their own version of smidgeon as an extension and create a mad libs character story and personality story. Their character navigates the feelings smidgeon scholars have learned about"
+        }
+      ],
+      "relevant": "A new idea: today children pick an emoji for themselves in Settings.",
+      "fix": "Plan it as a later extension for five-year-olds: build a bird from parts, then a short fill-in-the-blanks story about it that revisits the feelings learned.",
+      "action": "Decide whether and when",
+      "detail": ""
+    },
+    {
+      "id": "fb-APe9TaYrgE-3",
+      "for": "Seth",
+      "area": "Feedback · Settings",
+      "kind": "review",
+      "order": 10,
+      "status": "done",
+      "added": "2026-11-22",
+      "title": "The grown-ups area doesn't open",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.12",
+          "date": "22 Oct",
+          "text": "Grown up still not working."
+        }
+      ],
+      "relevant": "Feedback from an old build (0.1.x); the app has changed a lot since.",
+      "fix": "None now. Reopen this if it still happens.",
+      "action": "Nothing",
+      "detail": "",
+      "doneBy": "auto",
+      "doneAt": "2026-11-22",
+      "closed": "Closed: old build"
+    },
+    {
+      "id": "fb-AE4AlffP1f-6",
+      "for": "Seth",
+      "area": "Feedback · Later",
+      "kind": "later",
+      "order": 90,
+      "status": "later",
+      "added": "2026-11-22",
+      "title": "More follow-up ideas for grown-ups, for each feeling",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Can you suggest more follow up ideas for each emotion?"
+        }
+      ],
+      "relevant": "For later grown-up resources.",
+      "fix": "A short list of follow-up ideas per feeling, from Jennie.",
+      "action": "Later",
+      "detail": ""
+    },
+    {
+      "id": "fb-AE4AlffP1f-2",
+      "for": "Seth",
+      "area": "Feedback · Later",
+      "kind": "later",
+      "order": 91,
+      "status": "later",
+      "added": "2026-11-22",
+      "title": "Praise: the grown-up prompts and \"get low\"",
+      "quotes": [
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Liked the grown up prompts. Provides good information."
+        },
+        {
+          "who": "Sandie",
+          "build": "0.1.15",
+          "date": "26 Oct",
+          "text": "Each time it tells the grown up to ‘get low’. Good reminder to get down to child’s level."
+        }
+      ],
+      "relevant": "Still in the app.",
+      "fix": "Keep them.",
+      "action": "Later",
+      "detail": ""
+    },
+    {
       "id": "gf-20261119-115555",
       "for": "Seth",
       "area": "General feedback",
@@ -77,11 +996,13 @@
       "area": "Journal",
       "kind": "write",
       "order": 1,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-11",
       "title": "The journal's questions",
       "detail": "Filling in the day asks: \"What was your sun today?\", \"What was your cloud today?\", \"What's your rainbow? Something to look forward to.\", \"What was your big feeling today?\", \"What did we do today?\". Also the empty-day line \"Nothing written down this day.\" and the button \"Fill in today's page\".",
-      "answer": "Instead of nothing written down this day write, ‘ready for your words’"
+      "answer": "Instead of nothing written down this day write, ‘ready for your words’",
+      "doneBy": "Jennie",
+      "doneAt": "2026-11-20T07:43-05:00"
     },
     {
       "id": "eighteen-deeds",
@@ -208,10 +1129,12 @@
       "area": "Today's journey",
       "kind": "review",
       "order": 4,
-      "status": "open",
+      "status": "done",
       "added": "2026-10-31",
       "title": "Feeling Pairs and What Did Smidgeon Carry? lines",
-      "detail": "Instructions and replies in these two games are drafts (e.g. \"Turn over two cards. Can you find two that feel the same?\")."
+      "detail": "Instructions and replies in these two games are drafts (e.g. \"Turn over two cards. Can you find two that feel the same?\").",
+      "doneBy": "Jennie",
+      "doneAt": "2026-11-20T07:49-05:00"
     },
     {
       "id": "ten-questions",
@@ -332,151 +1255,14 @@
       "title": "Pick Smidgeon's new voice",
       "detail": "Listen to today's voice and eight candidates (A to H), each saying the same calm, sad and bright lines. Reply here with the letter you like, or two letters to mix, and all of Smidgeon's lines will be re-recorded in that voice.",
       "link": "https://sethw8.github.io/smidgeon-desk/smidgeon-voice.html"
-    },
-    {
-      "id": "fb-note-ANvsEupe3djJEQDHd9xH7_M",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 100,
-      "status": "open",
-      "added": "2026-11-17",
-      "title": "Seth's note, 17 Nov: Testing",
-      "detail": "Testing\n\n0.2.41 (1) · 17 Nov"
-    },
-    {
-      "id": "fb-note-AC9HfkIWAz8RPN9SXKXj9JY",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 100,
-      "status": "open",
-      "added": "2026-11-01",
-      "title": "Seth's crash report, 1 Nov: App Hard crash on microphone enable",
-      "detail": "App Hard crash on microphone enable\n\n0.2.3 (1) · 1 Nov · came with a crash log (in App Store Connect)"
-    },
-    {
-      "id": "fb-art",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 114,
-      "status": "open",
-      "added": "2026-11-18",
-      "title": "How things look (4)",
-      "detail": "Smidgeon's look, the pictures and where things sit. 4 points from 2 notes; latest 18 Nov.\n\n“Can you put the path back on the ground?” (0.2.42 (1), 18 Nov)\n“Can you cross his wings when it’s read aloud?” (0.2.42 (1), 18 Nov)\n“On the pebbles/build a wall, fill in the white spot between their legs. I think the same pebbles story was used twice.” (0.2.42 (1), 18 Nov)\n“I can’t get back to the opening pix of Smidgeon, but instead of one puffing up of his chest, there are 2. Looks like boobs! I prefer one.” (0.1.11 (1), 21 Oct)",
-      "updated": "2026-11-18"
-    },
-    {
-      "id": "fb-story-choices",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 113,
-      "status": "open",
-      "added": "2026-11-18",
-      "title": "Story choices and \"wrong\" answers (3)",
-      "detail": "How the choices in stories work, and what happens after a less helpful choice. 3 points from 3 notes; latest 18 Nov.\n\n“Can I choose to talk to Jennie about a problem that came up today or tell Jennie about how I returned to ‘still’ on my own?” (0.2.42 (1), 18 Nov)\n“I’m trying different answers to the dilemma posed to test the response. If I choose the ‘wrong’ response, the reading still goes back to the preferred answer. Can you suggest discussion when the wrong answer is chosen? If i choose ‘disaster’, for example, rather than just repeating the preferred answer, can you suggest why this answer is too emotional and how to manage this feeling to lower the reaction level?” (0.1.17 (1), 29 Oct)\n“I played one question, and there were only 2 options. I prefer 3 with one option pointing to the real issue? Why was he mad to have the bird join the game after they had already started playing? What options would allow the bird to join the game? Am I asking for too much information to be given?” (0.1.11 (1), 21 Oct)",
-      "updated": "2026-11-18"
-    },
-    {
-      "id": "fb-navigation",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 115,
-      "status": "open",
-      "added": "2026-10-21",
-      "title": "Getting around: back, close and dead ends (1)",
-      "detail": "Moving between screens: going back, button labels, getting stuck. 1 point from 1 note; latest 21 Oct.\n\n“After the game, the blue button says ‘close’ not ‘back’. Should the voice match the text on the button?” (0.1.11 (1), 21 Oct)",
-      "updated": "2026-10-21"
-    },
-    {
-      "id": "fb-bugs",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 110,
-      "status": "open",
-      "added": "2026-11-02",
-      "title": "Bugs and things not working (4)",
-      "detail": "Crashes, freezes and features that didn't respond. 4 points from 3 notes; latest 2 Nov.\n\n“Something is not working. If I choose another way to play, I can’t go back to the path pix and it locks up. There is no clear navigation from one screen to another.” (0.2.4 (1), 2 Nov)\n“The Resilience Tree does not update when I play more games. I think I am choosing the correct responses. Also, I don’t see 12 branches.” (0.1.12 (1), 23 Oct)\n“I played all the new games, but my tree didn’t have any new branches. Why not?” (0.1.12 (1), 22 Oct)\n“Grown up still not working.” (0.1.12 (1), 22 Oct)",
-      "updated": "2026-11-02"
-    },
-    {
-      "id": "fb-words-voice",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 116,
-      "status": "open",
-      "added": "2026-11-18",
-      "title": "Words, reading aloud and voices (6)",
-      "detail": "Wording, mispronunciations, what the reader says, and voice choices. 6 points from 4 notes; latest 18 Nov.\n\n“In Settings, can you give the user choices for Smidgeon’s voice like you did for the reader?” (0.2.42 (1), 18 Nov)\n“can you use a different example for proud other than blocks? Blocks were used for another word.” (0.2.42 (1), 18 Nov)\n“Check the reading of the ‘proud’ accomplishments. I think the reader missed one or 2.” (0.2.42 (1), 18 Nov)\n“Reader read ‘breathed’ incorrectly.” (0.1.15 (1), 26 Oct)\n“The wording of the picnic reads that the picnic will last 3 days, rather than the planning took 3 days.” (0.1.12 (1), 23 Oct)\n“There was one scenario that the voice read incorrectly. Confusing.” (0.1.12 (1), 22 Oct)",
-      "updated": "2026-11-18"
-    },
-    {
-      "id": "fb-praise",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 119,
-      "status": "open",
-      "added": "2026-10-29",
-      "title": "What's working (5)",
-      "detail": "Things testers said they liked. 5 points from 3 notes; latest 29 Oct.\n\n“On the game, I noticed a ‘do over’ icon. I like that too!” (0.1.18 (1), 29 Oct)\n“I really think you are developing something special” (0.1.15 (1), 26 Oct)\n“Good improvements” (0.1.15 (1), 26 Oct)\n“Good positive feedback at the bottom of the page w a heart.” (0.1.15 (1), 26 Oct)\n“It’s getting better and better every update!” (0.1.15 (1), 26 Oct)",
-      "updated": "2026-10-29"
-    },
-    {
-      "id": "fb-progress",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 112,
-      "status": "open",
-      "added": "2026-11-18",
-      "title": "Seeing progress: the tree, the forest, the journal (7)",
-      "detail": "Ways to see and revisit what's been learned: labels, reviewing a day, the Feeling Book. 7 points from 5 notes; latest 18 Nov.\n\n“Journal-I like the pointer about what to see next” (0.2.42 (1), 18 Nov)\n“I like the Feeling Book! Good review of the feelings reviewed.” (0.1.18 (1), 29 Oct)\n“On the Feelings Book, what if tapping the circle could take you back to the original exercise for that emotion?” (0.1.18 (1), 29 Oct)\n“Let’s say this day was ‘sad’, put a label above the tree to identify what was the theme that day. Then, if I need to go back and review a lesson, I can find it easily.” (0.1.17 (1), 29 Oct)\n“Forest - Put a label over the tree for the theme of that day” (0.1.17 (1), 29 Oct)\n“Feeling of the day. Could label the Forest tree with the feeling of the day. Good review for how many feeling have been discussed.” (0.1.15 (1), 26 Oct)\n“Is there away to repeat a day that might need a reminder? Maybe the label on the tree in the forest can repeat a day?” (0.1.15 (1), 26 Oct)",
-      "updated": "2026-11-18"
-    },
-    {
-      "id": "fb-grown-ups",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 117,
-      "status": "open",
-      "added": "2026-10-29",
-      "title": "Guidance for grown-ups and ways through feelings (4)",
-      "detail": "The grown-up prompts and tips, and ideas for more follow-up and calming strategies. 4 points from 2 notes; latest 29 Oct.\n\n“Some games are doing what I suggested about bringing emotions down and suggesting other ways to handle a situation. For example building the sand castle.” (0.1.17 (1), 29 Oct)\n“Liked the grown up prompts. Provides good information.” (0.1.15 (1), 26 Oct)\n“Each time it tells the grown up to ‘get low’. Good reminder to get down to child’s level.” (0.1.15 (1), 26 Oct)\n“Can you suggest more follow up ideas for each emotion?” (0.1.15 (1), 26 Oct)",
-      "updated": "2026-10-29"
-    },
-    {
-      "id": "fb-day-shape",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 118,
-      "status": "open",
-      "added": "2026-10-26",
-      "title": "The shape of the day (1)",
-      "detail": "How many games a day, and how the day is paced. 1 point from 1 note; latest 26 Oct.\n\n“How many games per day? 5? 6? 9?” (0.1.15 (1), 26 Oct)",
-      "updated": "2026-10-26"
-    },
-    {
-      "id": "fb-learning-games",
-      "for": "Seth",
-      "area": "Tester feedback",
-      "kind": "review",
-      "order": 111,
-      "status": "open",
-      "added": "2026-11-18",
-      "title": "The learning games (2)",
-      "detail": "Rooftop Hop, Letters and Remember Three: what landed and what to add. 2 points from 1 note; latest 18 Nov.\n\n“LOVE the gazebo pix. LOVE the idea to spot letters around the environment. Can Smidgeon’s voice read the letters?” (0.2.42 (1), 18 Nov)\n“Roof top counting-LOVE it! After saying ‘You did it!’ ask how do you feel?” (0.2.42 (1), 18 Nov)",
-      "updated": "2026-11-18"
     }
   ],
   "log": [
+    {
+      "date": "2026-11-22",
+      "from": "Seth's Claude",
+      "text": "Tester feedback rebuilt by app area: each card says the ask, who said it and when, whether it's still relevant, the recommended fix and what Seth needs to do. Old-build (0.1.x) feedback is closed and can be reopened. A new general-feedback box sits at the top. Ticking done now shows who marked it."
+    },
     {
       "date": "2026-11-16",
       "from": "Seth's Claude",

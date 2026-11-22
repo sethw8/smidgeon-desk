@@ -74,6 +74,17 @@ button:focus-visible, textarea:focus-visible, summary:focus-visible, a:focus-vis
 .log div { background: var(--surface); border-radius: 14px; padding: 10px 14px; border: 1px solid var(--line); overflow-wrap: anywhere; }
 .log small { display: block; font-size: 13px; color: var(--soft); }
 .empty { color: var(--soft); }
+/* Feedback cards (Seth, 22 Nov 2026): the ask, who said it, still relevant?, the fix, Seth's call. */
+.quote { margin: 2px 0 0; padding: 8px 12px; border-left: 3px solid var(--line); background: var(--bg); border-radius: 0 10px 10px 0; font-size: 15px; overflow-wrap: anywhere; }
+.quote small { display: block; color: var(--soft); font-size: 12.5px; margin-top: 2px; }
+.facts { display: grid; gap: 4px; font-size: 15px; margin: 2px 0 0; }
+.facts b { color: var(--ink); }
+.facts span { color: var(--soft); }
+.call { font: 700 14px var(--body); color: var(--accent); }
+.donemark { font: 700 13px var(--body); color: var(--done); }
+details.later > summary { cursor: pointer; font: 700 13px var(--body); letter-spacing: .08em; text-transform: uppercase; color: var(--soft); list-style: none; padding: 4px 0; }
+details.later > summary::-webkit-details-marker { display: none; }
+details.later > .group { margin-top: 10px; }
 /* General feedback: one box, not tied to a task. 16px+ text so phones don't zoom in. */
 .feedback form { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
 .feedback textarea { min-height: 120px; font-size: 16px; padding: 10px 12px; }
@@ -156,23 +167,39 @@ footer { color: var(--soft); font-size: 13px; }
 <script>
 const EMO = { Jennie: "🍎", Seth: "🛠️", all: "🐦" };
 const emo = s => EMO[String(s || "").startsWith("Seth") ? "Seth" : String(s || "").startsWith("Jennie") ? "Jennie" : "all"];
-const KIND = { write: "Write", refine: "Refine", review: "Review", decide: "Decide", record: "Record" };
+const KIND = { write: "Write", refine: "Refine", review: "Review", decide: "Decide", record: "Record", approve: "Approve", do: "To do", later: "Later" };
 let desk = null, who = "Jennie", showDone = false;
+// Remembered on this device: whose tab, and who is replying (each reply records its sender).
+const store = { get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+                set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+who = store.get("deskTab", "Jennie");
+let me = store.get("deskMe", who === "Seth" ? "Seth" : "Jennie");
+// Ticks sent from this device, shown right away until the daily sync folds them into the Desk.
+let ticks = store.get("deskTicks", {});
+const when = iso => { try { const d = new Date(iso); return isNaN(d) ? fmt(iso) : d.toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); } catch (e) { return iso || ""; } };
+function withTicks(t) {
+  const k = ticks[t.id];
+  if (!k) return t;
+  // The Desk has caught up: forget the local tick.
+  if ((k.status === "done") === (t.status === "done")) { delete ticks[t.id]; store.set("deskTicks", ticks); return t; }
+  return k.status === "done" ? { ...t, status: "done", doneBy: k.by, doneAt: k.at, closed: "" } : { ...t, status: "open", doneBy: "", doneAt: "", closed: "" };
+}
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fmt = d => { try { return new Date(d + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" }); } catch (e) { return d || ""; } };
 const safeUrl = u => /^https:\/\//.test(u || "") ? u : "";
 
 function render() {
-  const all = desk.tasks || [];
+  const all = (desk.tasks || []).map(withTicks);
   const mine = all.filter(t => who === "all" || t.for === who);
-  const open = mine.filter(t => t.status !== "done"), done = mine.filter(t => t.status === "done");
+  const later = mine.filter(t => t.status === "later");
+  const open = mine.filter(t => t.status !== "done" && t.status !== "later"), done = mine.filter(t => t.status === "done");
   document.getElementById("summary").innerHTML =
-    `<span class="pill"><b>${all.filter(t => t.for === "Jennie" && t.status !== "done").length}</b> for 🍎 Jennie</span>` +
-    `<span class="pill"><b>${all.filter(t => t.for === "Seth" && t.status !== "done").length}</b> for 🛠️ Seth</span>` +
+    `<span class="pill"><b>${all.filter(t => t.for === "Jennie" && t.status === "open").length}</b> for 🍎 Jennie</span>` +
+    `<span class="pill"><b>${all.filter(t => t.for === "Seth" && t.status === "open").length}</b> for 🛠️ Seth</span>` +
     `<span class="pill">App: ${esc(desk.app && desk.app.version)}</span>`;
   const box = document.getElementById("tasks");
   box.innerHTML = "";
-  const shown = mine.filter(t => showDone || t.status !== "done");
+  const shown = mine.filter(t => t.status !== "later" && (showDone || t.status !== "done"));
   if (!shown.length) box.innerHTML = '<p class="empty">Nothing open here.</p>';
   const areas = [...new Set(shown.map(t => t.area || "Other"))];
   for (const area of areas) {
@@ -183,6 +210,14 @@ function render() {
     list.forEach(t => g.append(card(t)));
     box.append(g);
   }
+  // Later: grown-up guidance and other parked ideas, out of the way.
+  if (later.length) {
+    const d = document.createElement("details"); d.className = "later";
+    d.innerHTML = `<summary>+ Later (${later.length})</summary>`;
+    const g = document.createElement("div"); g.className = "group";
+    later.forEach(t => g.append(card(t)));
+    d.append(g); box.append(d);
+  }
   const btn = document.getElementById("showDone");
   btn.hidden = !done.length;
   btn.textContent = showDone ? "Hide finished tasks" : `Show finished tasks (${done.length})`;
@@ -190,26 +225,53 @@ function render() {
 
 function card(t) {
   const el = document.createElement("article");
-  el.className = "task" + (t.status === "done" ? " done" : "");
+  const isDone = t.status === "done";
+  el.className = "task" + (isDone ? " done" : "");
   const link = safeUrl(t.link);
+  const quotes = (t.quotes || []).map(q => `<div class="quote"><span class="qt"></span><small>${esc(q.who)} · ${esc(q.build)} · ${esc(q.date)}</small></div>`).join("");
+  const facts = t.relevant || t.fix ? `<div class="facts">
+      ${t.relevant ? `<div><b>Still relevant?</b> <span class="f-rel"></span></div>` : ""}
+      ${t.fix ? `<div><b>Recommended fix:</b> <span class="f-fix"></span></div>` : ""}</div>` : "";
+  const mark = isDone ? (t.closed ? t.closed
+    : t.doneBy ? `Marked done by ${t.doneBy}${t.doneAt ? " · " + when(t.doneAt) : ""}` : (t.doneAt ? "Done " + fmt(t.doneAt) : "")) : "";
   el.innerHTML = `
     <div class="meta"><span class="kind">${esc(KIND[t.kind] || t.kind || "")}</span>
       ${who === "all" ? `<span class="who">${emo(t.for)} ${esc(t.for)}</span>` : ""}
-      <span>added ${esc(fmt(t.added))}${t.status === "done" && t.doneAt ? " · done " + esc(fmt(t.doneAt)) : ""}</span></div>
+      <span>added ${esc(fmt(t.added))}</span></div>
     <div class="title"></div>
+    ${quotes}
     <div class="detail"></div>
+    ${facts}
+    ${t.action && !isDone && t.status !== "later" ? `<div class="call">${t.for === "Jennie" ? "Your call" : "Seth"}: <span class="f-act"></span></div>` : ""}
     ${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">Open it</a>` : ""}
     ${t.answer ? `<div class="detail"><b>Answer:</b> <span class="ans"></span></div>` : ""}
-    ${t.status !== "done" ? `<details class="reply"><summary>Reply or mark done</summary>
+    ${mark ? `<div class="donemark">✓ <span class="f-mark"></span></div>` : ""}
+    ${!isDone ? `<details class="reply"><summary>Reply or mark done</summary>
       <form><label class="chk"><input type="checkbox" name="done"> This is done</label>
       <textarea name="note" placeholder="Your answer, note or link…" aria-label="Your reply"></textarea>
-      <button class="btn" type="submit">Send</button><span class="saved" role="status"></span></form></details>` : ""}`;
+      <button class="btn" type="submit">Send</button><span class="saved" role="status"></span></form></details>`
+      : `<button class="btn ghost reopen" type="button">Reopen</button><span class="saved" role="status"></span>`}`;
   el.querySelector(".title").textContent = t.title || "";
   el.querySelectorAll(".detail")[0].textContent = t.detail || "";
+  el.querySelectorAll(".quote .qt").forEach((n, i) => { n.textContent = "“" + ((t.quotes || [])[i] || {}).text + "”"; });
+  const set = (sel, v) => { const n = el.querySelector(sel); if (n) n.textContent = v || ""; };
+  set(".f-rel", t.relevant); set(".f-fix", t.fix); set(".f-act", t.action); set(".f-mark", mark);
   if (t.answer) el.querySelector(".ans").textContent = t.answer;
   const f = el.querySelector("form");
   if (f) f.addEventListener("submit", e => send(e, t, f));
+  const re = el.querySelector(".reopen");
+  if (re) re.addEventListener("click", () => reopen(t, re));
   return el;
+}
+
+async function reopen(t, btn) {
+  const out = btn.nextElementSibling;
+  out.textContent = "Sending…";
+  try {
+    await sendDeskReply({ task: t.id, title: t.title, from: me, done: "reopen", note: "" });
+    ticks[t.id] = { status: "open", by: me, at: new Date().toISOString() }; store.set("deskTicks", ticks);
+    render();
+  } catch (err) { out.textContent = "Couldn't send from here. Tell your Claude instead."; }
 }
 
 async function send(e, t, f) {
@@ -219,9 +281,14 @@ async function send(e, t, f) {
   if (!note && !done) { out.textContent = "Add a note or tick done first."; return; }
   out.textContent = "Sending…";
   try {
-    await sendDeskReply({ task: t.id, title: t.title,
-    from: who === "Seth" ? "Seth" : "Jennie", done: done ? "yes" : "no", note });
-    out.textContent = "Sent. The Desk updates once a Claude picks it up.";
+    await sendDeskReply({ task: t.id, title: t.title, from: me, done: done ? "yes" : "no", note });
+    if (done) {
+      // Resolve it here straight away, and remember it on this device.
+      ticks[t.id] = { status: "done", by: me, at: new Date().toISOString() }; store.set("deskTicks", ticks);
+      render();
+      return;
+    }
+    out.textContent = "Sent.";
     f.reset();
   } catch (err) { out.textContent = "Couldn't send from here. Tell your Claude instead."; }
 }
@@ -242,6 +309,8 @@ function renderRest() {
 
 document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => {
   who = b.dataset.who;
+  store.set("deskTab", who);
+  if (who === "Seth" || who === "Jennie") { me = who; store.set("deskMe", me); }
   document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
   render();
 }));
@@ -257,7 +326,7 @@ document.getElementById("copy").addEventListener("click", async () => {
 });
 
 fetch("data/desk.json", { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => { desk = d; render(); renderRest(); })
+  .then(d => { desk = d; document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.who === who))); render(); renderRest(); })
   .catch(() => { document.getElementById("tasks").innerHTML = '<p class="empty">Couldn\'t load the Desk. Try reloading.</p>'; });
 
 // General feedback (Seth, 19 Nov 2026): saved like replies, under the task
