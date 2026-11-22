@@ -606,7 +606,7 @@
       "area": "Feedback · Learning games",
       "kind": "approve",
       "order": 41,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-20",
       "title": "Rooftop Hop: the die must fit the hops left; count on next",
       "quotes": [
@@ -620,7 +620,10 @@
       "relevant": "Half done in 0.2.43: the die now always fits the roofs left. Counting on comes in batch 3.",
       "fix": "Near the end, roll only up to the roofs left so pips and hops always match. Next step: when they don't match, count on from where Smidgeon is.",
       "action": "Approve",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.45",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T12:45-05:00"
     },
     {
       "id": "fb-AGvMjuBz8-4",
@@ -1040,11 +1043,14 @@
       "area": "Journal",
       "kind": "decide",
       "order": 3,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-10",
       "title": "\"Days together\", not streaks",
       "detail": "Count days together and never show a broken streak, with a gold feather icon. Agree, or a Duolingo-style day streak?",
-      "answer": "I think keeping days together is age appropriate / Days together not a Duolingo streak"
+      "answer": "I think keeping days together is age appropriate / Days together not a Duolingo streak",
+      "closed": "Built in 0.2.45",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T12:45-05:00"
     },
     {
       "id": "flock-words",
@@ -1099,11 +1105,14 @@
       "area": "Flock",
       "kind": "review",
       "order": 5,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-11",
       "title": "Flock names",
       "detail": "A kind word plus the child's emoji's short name, same first letter: Daring Dino, Bouncy Bunny, Peppy Pup, Kind Kiddo, Lovely Llama, Outdoorsy Otter. Your own reads \"Kind Kiddo • Me\". Word lists per letter and short names (Pup, Kitty, Dino, Roo, Croc, Spacey) are drafts.",
-      "answer": "I think it could be a mix of alliteration and child appropriate adjectives that they can choose from."
+      "answer": "I think it could be a mix of alliteration and child appropriate adjectives that they can choose from.",
+      "closed": "Built in 0.2.45",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T12:45-05:00"
     },
     {
       "id": "face-button",
