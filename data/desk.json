@@ -2,7 +2,7 @@
   "updated": "2026-11-22",
   "updatedBy": "Seth's Claude",
   "app": {
-    "version": "0.2.44 with the team; going to Apple for outside testers",
+    "version": "0.2.45 with the team; going to Apple for outside testers",
     "summary": "Smidgeon Scholars, 12 November 2026. Test build 0.2.26 is with testers. This replaces the older \"Where the app is now\" (0.1.21). Jennie decides what children learn and every word they and their grown-ups hear; Seth's side builds it. Anything marked a draft is Seth's placeholder wording waiting for Jennie.\n\nFive tabs: Today, Journal, Flock, Help me (call Jennie), Settings.\n\nTODAY: one feeling a day, the same for every family (e.g. \"The Nervous Feeling\"). A journey map of about ten stops in a fixed order: mailbox (the feeling arrives as a group chat with Smidgeon and Jennie), pinwheel (breathing), drum (move your body), Feeling Mirror (make the face, then \"What does nervous look like to you? Practice with your grown-up.\"), Feeling Pairs, a call with Jennie (the child says how they feel; kept on the phone only), the nest, Sun/Cloud/Rainbow, and a present. Each stop ends with a celebration line. The day ends at home: Smidgeon on the windowsill at lunch, dinner, tidy-up or bedtime, with a question and a helper job. The path is once a day.\n\nJOURNAL: a calendar of days, each a postcard: Smidgeon acting out the feeling, the date as a stamp, coins for what we did, and what we said as chat bubbles. How I felt (pick a face) and What we did (coins in Me, Nest, The Flock). A deed done 1/3/5/10 times becomes copper/bronze/silver/gold. Filling in the day is a Stories-style sequence. \"Days together\" never resets: no broken streaks.\n\nFLOCK (anonymous): a feed of families' postcards with each family's emoji and a made-up kind name, never real names, and hearts. Example families fill it until real ones join. Sharing is off until a grown-up turns it on. Nothing is sent anywhere yet: the real feed (Apple's CloudKit) waits for a children's-privacy (COPPA) review and Jennie's approval of the copy.\n\nHELP ME: call Jennie any time about one feeling.\n\nSETTINGS: tips and printouts, emoji and skin tone, save what we tell Jennie, read everything aloud, flock sharing, narrator voice.\n\nPRINCIPLES: tandem (child and grown-up together); Smidgeon shows, Jennie coaches; steam shows how big a feeling is, never good or bad; never marked wrong; built for pre-readers; resolve and pause before moving on; no red except hang-up and hearts.\n\nHOW TO HELP: suggest wording, order and what children learn in these terms, so Seth's side can drop it straight in. Most words and stories change without a new app version.",
     "links": [
       {
@@ -1311,6 +1311,50 @@
       "added": "2026-11-22",
       "title": "Smidgeon's feelings inside the games",
       "detail": "Your idea is in Rooftop Hop, Remember Three, Letters and the counting moments. Nothing is marked wrong any more: a wrong tap just dips softly. Smidgeon says these, in his own voice (drafts, already recorded):\n\n• After a second miss (he looks frustrated): \"Grr, two tries and not yet! That's frustrating. Let's take a big breath, and look again.\"\n• When they get it after that: \"We kept trying, and we got it! That makes me happy.\"\n• At the end of the game: \"We did the whole thing. I feel proud!\"\n\nA right answer on the first try gets no extra words, so the happy line stays special. Tell us what to change."
+    },
+    {
+      "id": "flock-kind-words",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 6,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Families now pick their flock name's kind word",
+      "detail": "Your idea: in the welcome and in Settings, families tap a kind word for their pretend flock name (\"Brave Bunny\", \"Dreamy Dino\"). Words that start with the same letter as their emoji come first, then: Little, Brave, Gentle, Busy, Sunny, Sleepy, Hopping, Cosy, Curious, Merry, Quiet, Bouncy. Only the pretend name is ever shown to other families.\n\nThe letter words (drafts): Artsy, Awesome · Brave, Bouncy, Busy · Curious, Cosy, Cheery · Daring, Dreamy, Dancing · Eager, Easygoing · Friendly, Fuzzy, Funny · Gentle, Giggly, Glad · Happy, Hopping, Helpful · Jolly, Jumpy · Kind · Lucky, Little, Lovely · Merry, Mighty, Mellow · Nifty, Nice · Outgoing, Outdoorsy · Peppy, Playful, Proud · Quiet, Quick · Rosy, Rolling · Sunny, Silly, Sleepy · Tiny, Twinkly, Thoughtful · Upbeat · Wiggly, Wise, Wonderful · Zippy.\n\nWe took out \"Kooky\" and \"Zany\" in case they read as teasing. Tell us any to add, drop or change."
+    },
+    {
+      "id": "weekly-days-together",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 7,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "A celebration every 7 days together",
+      "detail": "Your idea: every 7 days together (not in a row: 7, 14, 21…) the family's own celebration card appears in the flock, and a little gold coin marks that day on the journal calendar. 30, 50 and 100 days stay extra special.\n\nThe weekly card's words (draft): \"14 days together!\" / \"Seven more days of growing together.\"\nThe 30, 50 and 100 card: \"30 days together!\" / \"A day together, again and again.\""
+    },
+    {
+      "id": "hop-count-on",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 8,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "Rooftop Hop: a counting-on level",
+      "detail": "Your idea: once a child reads the 5-dot die at a glance, Rooftop Hop moves up a level. The roofs show numbers, and Smidgeon counts on from where he is: on roof 4, rolling 3, they count \"5, 6, 7\". Near the end the die can roll more than the roofs left, and they count on all the way home.\n\nNew lines (drafts, recorded):\n• Smidgeon, before each roll's hops: \"<his roof number>. Let's count on!\"\n• When the roll was bigger than the roofs left: \"We only needed some of the dots. We counted on all the way home!\""
+    },
+    {
+      "id": "deeds-ours",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 9,
+      "status": "open",
+      "added": "2026-11-22",
+      "title": "\"What we did\": a row for your own",
+      "detail": "Your idea: the 18 coins stay, and there's a fourth group, \"Ours\", where a grown-up adds their own (up to six), like \"Fed the cat\". It shows as a fourth row on \"What we did\" and a tab in the journal.\n\nWords (drafts): \"Ours\" · \"Add your own\" · \"Something we did\" · \"e.g. Fed the cat\" · \"Add\" · \"Cancel\" · \"Remove\"."
     }
   ],
   "log": [
