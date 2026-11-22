@@ -890,7 +890,7 @@
       "area": "Feedback · Settings",
       "kind": "decide",
       "order": 70,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-20",
       "title": "Kids design their own bird, with a make-your-own story",
       "quotes": [
@@ -910,7 +910,10 @@
       "relevant": "A new idea: today children pick an emoji for themselves in Settings.",
       "fix": "Plan it as a later extension for five-year-olds: build a bird from parts, then a short fill-in-the-blanks story about it that revisits the feelings learned.",
       "action": "Decide whether and when",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.46",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-22T14:41-05:00"
     },
     {
       "id": "fb-APe9TaYrgE-3",
