@@ -2,7 +2,7 @@
   "updated": "2026-11-24",
   "updatedBy": "Seth's Claude",
   "app": {
-    "version": "0.2.47 with the team; going to Apple for outside testers",
+    "version": "0.2.47 with the team",
     "summary": "Smidgeon Scholars, 12 November 2026. Test build 0.2.26 is with testers. This replaces the older \"Where the app is now\" (0.1.21). Jennie decides what children learn and every word they and their grown-ups hear; Seth's side builds it. Anything marked a draft is Seth's placeholder wording waiting for Jennie.\n\nFive tabs: Today, Journal, Flock, Help me (call Jennie), Settings.\n\nTODAY: one feeling a day, the same for every family (e.g. \"The Nervous Feeling\"). A journey map of about ten stops in a fixed order: mailbox (the feeling arrives as a group chat with Smidgeon and Jennie), pinwheel (breathing), drum (move your body), Feeling Mirror (make the face, then \"What does nervous look like to you? Practice with your grown-up.\"), Feeling Pairs, a call with Jennie (the child says how they feel; kept on the phone only), the nest, Sun/Cloud/Rainbow, and a present. Each stop ends with a celebration line. The day ends at home: Smidgeon on the windowsill at lunch, dinner, tidy-up or bedtime, with a question and a helper job. The path is once a day.\n\nJOURNAL: a calendar of days, each a postcard: Smidgeon acting out the feeling, the date as a stamp, coins for what we did, and what we said as chat bubbles. How I felt (pick a face) and What we did (coins in Me, Nest, The Flock). A deed done 1/3/5/10 times becomes copper/bronze/silver/gold. Filling in the day is a Stories-style sequence. \"Days together\" never resets: no broken streaks.\n\nFLOCK (anonymous): a feed of families' postcards with each family's emoji and a made-up kind name, never real names, and hearts. Example families fill it until real ones join. Sharing is off until a grown-up turns it on. Nothing is sent anywhere yet: the real feed (Apple's CloudKit) waits for a children's-privacy (COPPA) review and Jennie's approval of the copy.\n\nHELP ME: call Jennie any time about one feeling.\n\nSETTINGS: tips and printouts, emoji and skin tone, save what we tell Jennie, read everything aloud, flock sharing, narrator voice.\n\nPRINCIPLES: tandem (child and grown-up together); Smidgeon shows, Jennie coaches; steam shows how big a feeling is, never good or bad; never marked wrong; built for pre-readers; resolve and pause before moving on; no red except hang-up and hearts.\n\nHOW TO HELP: suggest wording, order and what children learn in these terms, so Seth's side can drop it straight in. Most words and stories change without a new app version.",
     "links": [
       {
@@ -431,7 +431,7 @@
       "area": "Feedback · Stories",
       "kind": "decide",
       "order": 30,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-22",
       "title": "\"Proud\" needs an example other than blocks",
       "quotes": [
@@ -445,7 +445,10 @@
       "relevant": "Yes: the proud story rebuilds a block tower, and the frustration story has Smidgeon kick the blocks.",
       "fix": "Give proud its own accomplishment (for example finishing a puzzle or learning to pump on the swing), drafted for Jennie.",
       "action": "Send to Jennie",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.47: the proud story is now about finishing a puzzle, with a new puzzle picture; blocks stay with the frustration story.",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-24T11:00:00-05:00"
     },
     {
       "id": "fb-AGvMjuBz8-6",
@@ -453,7 +456,7 @@
       "area": "Feedback · Stories",
       "kind": "decide",
       "order": 31,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-22",
       "title": "Pebbles: a gap in the wall picture, and pebbles in two stories",
       "quotes": [
@@ -467,7 +470,10 @@
       "relevant": "Likely: pebbles are in both \"The pebble circle\" and \"Robin goes\". The white gap needs a look in the scene art.",
       "fix": "Fill the gap in the scene art; give one of the two stories a different activity.",
       "action": "Approve the art fix; decide which story changes",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.47: the white patch between Robin's legs is gone, and the pebble wall is now in one story only (the other uses a ball).",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-24T11:00:00-05:00"
     },
     {
       "id": "fb-AJXiP_6XbB-2",
@@ -793,7 +799,7 @@
       "area": "Feedback · Reading aloud and voices",
       "kind": "approve",
       "order": 60,
-      "status": "open",
+      "status": "done",
       "added": "2026-11-22",
       "title": "The end-of-day reading misses some things we did",
       "quotes": [
@@ -807,7 +813,10 @@
       "relevant": "Yes: the lines for the three learning games (Remember Three, Rooftop Hop, Letters) have no recording, so they're silent on testers' phones.",
       "fix": "Add the three lines to the content with recordings (drafts for Jennie).",
       "action": "Approve",
-      "detail": ""
+      "detail": "",
+      "closed": "Built in 0.2.47: the end-of-day reading now names every stop you did, including the energy burst and Jennie's call.",
+      "doneBy": "Seth's Claude",
+      "doneAt": "2026-11-24T11:00:00-05:00"
     },
     {
       "id": "fb-AGvMjuBz8-2",
