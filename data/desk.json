@@ -1465,6 +1465,17 @@
       "added": "2026-11-24",
       "title": "End-of-day reading: new lines so nothing is missed",
       "detail": "Sandie noticed the end-of-day reading missed one or two of the things we did. It now reads everything the family did that day, in the day's order, one bubble each, repeats included. The ones that already had a line (path, breathing, mirror, matching, nest, how big) keep their feeling-named lines. These are new short drafts in the narrator's voice, already recorded for testing: tell us which to keep, change or drop, or send your own.\n\n1. Energy burst: We did an energy burst and breathed back to still.\n2. Your call (read only if you did the call, not if you chose later): We talked with Jennie on the phone.\n3. Message route: We walked a kind note across the park.\n4. Remember three: We remembered three things, in order.\n5. Rooftop hop: We counted the hops up the rooftops.\n6. Letters: We met new letters and read a word.\n7. Any other game we haven't written for: We played a game together.\n\nShould lines 1 to 3 name the feeling like the others do (\"You breathed with Smidgeon when he felt happy\")? Say so and we will write nine each."
+    },
+    {
+      "id": "solo-row-words",
+      "for": "Jennie",
+      "area": "Words",
+      "kind": "review",
+      "order": 4,
+      "status": "open",
+      "added": "2026-11-25",
+      "title": "Settings: \"Games with 🚫\" and the grown-up's emoji",
+      "detail": "In Settings, the Play on my own row used to say \"Games and stories without a grown-up\". It now says \"Games with\", then 🚫 and the family's chosen grown-up emoji, so it reads at a glance. VoiceOver still reads the full sentence. These are draft words: change them however you like."
     }
   ],
   "log": [
@@ -1562,6 +1573,11 @@
       "date": "2026-11-16",
       "from": "Seth's Claude",
       "text": "Build 0.2.34 sent to testers (and to Apple for outside families): a new app icon (Smidgeon waving in a sunburst, with dark and tinted versions), a painted opening valley, a new Flock header where the friends gather and chat, today's feeling face on the Today tab, journal coins that float up, and night colours on celebration cards. This may become the first App Store release if testing goes well."
+    },
+    {
+      "date": "2026-11-25",
+      "from": "Seth's Claude",
+      "text": "Build 0.2.48 sent to testers and to Apple for outside families: the new painted hillside map in every season, with each stop standing on the path; a progress ring on the Go button; clearer part-of-day labels; the journal opens on this month with today marked; slower, calmer breathing in Rooftop Hop; bigger emoji choices and a few tidier rows in Settings."
     }
   ]
 }
